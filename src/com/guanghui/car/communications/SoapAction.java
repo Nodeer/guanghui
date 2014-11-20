@@ -9,6 +9,7 @@ package com.guanghui.car.communications;
 public class SoapAction {
 	/**
 	 * 服务器地址
+     * 账号admin,密码admin12
 	 */
 	public static String host = "http://u.cgacar.com:66/";
 	/**

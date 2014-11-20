@@ -878,7 +878,7 @@ public class CheckTaskPreviewActivity extends Activity {
 					case R.id.check_task_preview_btn_3_2:
 						//车型信息修改
 						Intent intent2 = new Intent();
-						intent2.setClass(context, CarDengji.class);
+						intent2.setClass(context, CarDengji1.class);
 						intent2.putExtra("edit", true);
 						intent2.putExtra("VIN", ly3txt3);
 						startActivity(intent2);		

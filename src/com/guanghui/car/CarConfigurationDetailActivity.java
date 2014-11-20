@@ -929,10 +929,13 @@ public class CarConfigurationDetailActivity extends Activity {
 
 
                         if (edit) {
-                            Intent intent = new Intent();
-                            intent.setClass(context, CarDengji.class);
-                            setResult(1, intent);
-                            finish();
+//                            Intent intent = new Intent();
+//                            intent.setClass(context, CarDengji.class);
+//                            setResult(1, intent);
+//                            finish();
+                            Intent intent2 = new Intent();
+                            intent2.setClass(context, CheckTaskPreviewActivity.class);
+                            startActivity(intent2);
                         } else {
                             Intent intent = new Intent();
                             intent.setClass(context, JingMiCarCheckActivity.class);

@@ -10,20 +10,22 @@
   </component>
   <component name="AndroidLayoutPreviewToolWindow">
     <option name="state">
-      <GlobalState>
-        <option name="visible" value="false" />
-      </GlobalState>
+      <GlobalState />
     </option>
   </component>
   <component name="AndroidLayouts">
     <shared>
       <config>
-        <devices>
-          <device id="Nexus 7" />
-        </devices>
+        <pickBest>false</pickBest>
+        <target>android-19</target>
       </config>
     </shared>
     <layouts>
+      <layout url="file://$PROJECT_DIR$/res/layout/car_dengji1.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/res/layout/check_task_preview2.xml">
         <config>
           <theme>@style/AppTheme</theme>
@@ -36,16 +38,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.guanghui.car" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="f0fcb563-65a9-4303-aa19-a4af4af15cdc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/key/shike.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/check_task_img_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/guanghui/car/CheckTaskPreviewActivity.java" afterPath="$PROJECT_DIR$/src/com/guanghui/car/CheckTaskPreviewActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/guanghui/car/CheckTaskPreviewActivity2.java" afterPath="$PROJECT_DIR$/src/com/guanghui/car/CheckTaskPreviewActivity2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/check_task_preview2.xml" afterPath="$PROJECT_DIR$/res/layout/check_task_preview2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/dialog_chexing_xinxi.xml" afterPath="$PROJECT_DIR$/res/layout/dialog_chexing_xinxi.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" readonly="true" id="f0fcb563-65a9-4303-aa19-a4af4af15cdc" name="Default" comment="" />
     <ignored path="guanghui.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -98,8 +91,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties converted="true" />
     <breakpoint_rules converted="true" />
+    <ui_properties converted="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -107,67 +100,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CheckTaskPreviewActivity2.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/CheckTaskPreviewActivity2.java">
+      <file leaf-file-name="JingMiCarCheckActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/jingmicheck/JingMiCarCheckActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1114" max-vertical-offset="11460">
-              <caret line="76" column="40" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="3251" max-vertical-offset="9300">
+              <caret line="256" column="21" selection-start-line="256" selection-start-column="21" selection-end-line="256" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckTaskPreviewActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/CheckTaskPreviewActivity.java">
+      <file leaf-file-name="CarCheckActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/CarCheckActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48525074" vertical-offset="17991" max-vertical-offset="23120">
-              <caret line="965" column="130" selection-start-line="965" selection-start-column="130" selection-end-line="965" selection-end-column="130" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="10875" max-vertical-offset="15780">
+              <caret line="613" column="53" selection-start-line="613" selection-start-column="53" selection-end-line="613" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="check_task_img_layout.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/check_task_img_layout.xml">
+      <file leaf-file-name="CheckActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/CheckActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-32.258064" vertical-offset="0" max-vertical-offset="6380">
-              <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="1280">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="android-designer">
-            <state />
+        </entry>
+      </file>
+      <file leaf-file-name="CarDengji.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/CarDengji.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.586207" vertical-offset="3480" max-vertical-offset="62920">
+              <caret line="228" column="49" selection-start-line="228" selection-start-column="49" selection-end-line="228" selection-end-column="49" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="check_task_preview2.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/check_task_preview2.xml">
+      <file leaf-file-name="CarDengji1.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/CarDengji1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.612904" vertical-offset="3842" max-vertical-offset="15100">
-              <caret line="227" column="27" selection-start-line="227" selection-start-column="27" selection-end-line="227" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3700">
+              <caret line="34" column="23" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="23" />
               <folding>
-                <element signature="tag#LinearLayout#0;tag#LinearLayout#0;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-                <element signature="tag#TextView#0;tag#LinearLayout#1;tag#LinearLayout#1;tag#LinearLayout#0;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-                <element signature="tag#LinearLayout#0;tag#LinearLayout#1;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-                <element signature="tag#LinearLayout#1;tag#LinearLayout#1;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-                <element signature="tag#LinearLayout#2;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-                <element signature="tag#LinearLayout#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-                <element signature="tag#RelativeLayout#0;tag#LinearLayout#3;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-                <element signature="tag#LinearLayout#0;tag#LinearLayout#0;tag#LinearLayout#3;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-                <element signature="tag#LinearLayout#1;tag#LinearLayout#0;tag#LinearLayout#3;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-                <element signature="tag#LinearLayout#2;tag#LinearLayout#0;tag#LinearLayout#3;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-                <element signature="tag#LinearLayout#3;tag#LinearLayout#0;tag#LinearLayout#3;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-                <element signature="tag#LinearLayout#4;tag#LinearLayout#0;tag#LinearLayout#3;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-                <element signature="tag#LinearLayout#5;tag#LinearLayout#0;tag#LinearLayout#3;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-                <element signature="tag#LinearLayout#6;tag#LinearLayout#0;tag#LinearLayout#3;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-                <element signature="tag#LinearLayout#7;tag#LinearLayout#0;tag#LinearLayout#3;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-                <element signature="tag#LinearLayout#8;tag#LinearLayout#0;tag#LinearLayout#3;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-                <element signature="tag#LinearLayout#11;tag#LinearLayout#0;tag#LinearLayout#3;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
+                <element signature="e#2438#2936#0" expanded="true" />
+                <element signature="e#2931#2932#0" expanded="true" />
               </folding>
             </state>
           </provider>
-          <provider editor-type-id="android-designer">
-            <state />
+        </entry>
+      </file>
+      <file leaf-file-name="CarDengji4.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/CarDengji4.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.37931" vertical-offset="1850" max-vertical-offset="13120">
+              <caret line="142" column="59" selection-start-line="142" selection-start-column="59" selection-end-line="142" selection-end-column="59" />
+              <folding>
+                <element signature="e#25517#25663#0" expanded="true" />
+                <element signature="e#25651#25652#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CarConfigurationActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/CarConfigurationActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3588" max-vertical-offset="4880">
+              <caret line="233" column="71" selection-start-line="233" selection-start-column="71" selection-end-line="233" selection-end-column="71" />
+              <folding>
+                <element signature="e#5122#5235#0" expanded="true" />
+                <element signature="e#5230#5231#0" expanded="true" />
+                <element signature="e#5272#5389#0" expanded="true" />
+                <element signature="e#5384#5385#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShouXuDengJiAcitivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/ShouXuDengJiAcitivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.38066825" vertical-offset="13241" max-vertical-offset="53760">
+              <caret line="821" column="32" selection-start-line="821" selection-start-column="32" selection-end-line="821" selection-end-column="32" />
+              <folding>
+                <element signature="e#14622#14910#0" expanded="true" />
+                <element signature="e#14902#14903#0" expanded="true" />
+                <element signature="e#23065#23216#0" expanded="true" />
+                <element signature="e#23203#23204#0" expanded="true" />
+                <element signature="e#23624#23844#0" expanded="true" />
+                <element signature="e#23837#23838#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -184,18 +211,19 @@
     <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/com/guanghui/car/ShouXuDengJiHistory.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/com/guanghui/car/CarDengji.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/com/guanghui/car/ShouXuDengJiAcitivity.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/com/guanghui/car/CheckTaskPreviewActivity.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/com/guanghui/car/db/ChexingDengjiDB.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/res/layout/dialog_chexing_xinxi.xml" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/com/guanghui/car/CheckTaskPreviewActivity2.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/res/layout/check_task_preview2.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/com/guanghui/car/CheckTaskPreviewActivity2.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/res/layout/dialog_chexing_xinxi.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/com/guanghui/car/db/ChexingDengjiDB.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/com/guanghui/car/CarConfigurationDetailActivity.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/com/guanghui/car/ShouXuDengJiHistory.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/com/guanghui/car/ShouXuDengJiHistory.java" />
         <option value="$PROJECT_DIR$/res/layout/layout_title.xml" />
@@ -203,23 +231,27 @@
         <option value="$PROJECT_DIR$/src/com/guanghui/car/adapter/MytaskAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/guanghui/car/LoginActivity.java" />
         <option value="$PROJECT_DIR$/src/com/guanghui/car/db/ChexingDengjiDB.java" />
-        <option value="$PROJECT_DIR$/src/com/guanghui/car/CarConfigurationDetailActivity.java" />
         <option value="$PROJECT_DIR$/src/com/guanghui/car/ui/DateTimePickDialogUtil.java" />
         <option value="$PROJECT_DIR$/src/com/guanghui/car/ui/datepicker/WheelMain.java" />
         <option value="$PROJECT_DIR$/res/layout/layout_common_tab_title.xml" />
         <option value="$PROJECT_DIR$/res/layout/check_task_img_layout.xml" />
         <option value="$PROJECT_DIR$/src/com/guanghui/car/CheckTaskPreviewActivity2.java" />
         <option value="$PROJECT_DIR$/res/layout/dialog_chexing_xinxi.xml" />
-        <option value="$PROJECT_DIR$/src/com/guanghui/car/CheckTaskPreviewActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/check_task_preview2.xml" />
+        <option value="$PROJECT_DIR$/src/com/guanghui/car/communications/SoapAction.java" />
+        <option value="$PROJECT_DIR$/src/com/guanghui/car/CheckTaskPreviewActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/guanghui/car/CarDengji.java" />
+        <option value="$PROJECT_DIR$/src/com/guanghui/car/CarConfigurationDetailActivity.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/guanghui/car/ShouXuDengJiAcitivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1618" />
-    <option name="height" value="870" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -247,6 +279,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -255,10 +289,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guanghui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guanghuigit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guanghui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guanghuigit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="car" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -302,8 +363,8 @@
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4" value="4" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth5" value="800" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5" value="5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="HC34XW910233" />
-    <property name="DEBUGGABLE_DEVICE" value="lenovo-lenovo_b8000_h-0123456789ABCDEF" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="192.168.56.102:5555" />
+    <property name="DEBUGGABLE_DEVICE" value="genymotion-google_nexus_5___4_4_2___api_19___1080x1920-192.168.56.102:5555" />
     <property name="DEBUGGABLE_PROCESS" value="com.guanghui.car" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="ExportedModule" value="guanghui" />
@@ -343,6 +404,33 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -454,56 +542,45 @@
     <configuration useDefault="false">d:\Users\b.xu\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
   </component>
-  <component name="SvnFileUrlMappingImpl">
-    <option name="myMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\iceman\intellij workspae\guanghui" />
-          <option name="myCopyRoot" value="D:\iceman\intellij workspae\guanghui" />
-        </SvnCopyRootSimple>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\iceman\intellij workspae\guanghui\.idea" />
-          <option name="myCopyRoot" value="D:\iceman\intellij workspae\guanghui\.idea" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
-    <option name="myMoreRealMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\iceman\intellij workspae\guanghui" />
-          <option name="myCopyRoot" value="D:\iceman\intellij workspae\guanghui" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f0fcb563-65a9-4303-aa19-a4af4af15cdc" name="Default" comment="" />
+      <created>1416471318047</created>
+      <updated>1416471318047</updated>
+    </task>
+    <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1618" height="870" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918397" sideWeight="0.5002667" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918397" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7524205" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756758" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.75135136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14984126" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918397" sideWeight="0.49973333" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.124200426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.49973333" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32780084" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -535,7 +612,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/guanghui/car/CarConfigurationDetailActivity.java</url>
-          <line>1119</line>
+          <line>1122</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -545,188 +622,41 @@
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/guanghui/car/ShouXuDengJiAcitivity.java</url>
+          <line>1700</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/guanghui/car/ShouXuDengJiAcitivity.java</url>
+          <line>1836</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/guanghui/car/CarDengji2.java</url>
+          <line>130</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/guanghui/car/CarDengji2.java</url>
+          <line>137</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/guanghui/car/CarDengji4.java</url>
+          <line>371</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="10" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/CarConfigurationDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3460" max-vertical-offset="29360">
-          <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/db/ChexingDengjiDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3120" max-vertical-offset="5400">
-          <caret line="156" column="33" selection-start-line="156" selection-start-column="33" selection-end-line="156" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3600" max-vertical-offset="6840">
-          <caret line="183" column="62" selection-start-line="183" selection-start-column="62" selection-end-line="183" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/ActivityMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2000" max-vertical-offset="3480">
-          <caret line="100" column="39" selection-start-line="100" selection-start-column="39" selection-end-line="100" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/Tab1Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6180" max-vertical-offset="7320">
-          <caret line="309" column="54" selection-start-line="309" selection-start-column="54" selection-end-line="309" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/adapter/MytaskAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3020" max-vertical-offset="7640">
-          <caret line="151" column="81" selection-start-line="151" selection-start-column="81" selection-end-line="151" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4187" max-vertical-offset="6620">
-          <caret line="237" column="0" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/ShouXuDengJiHistory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="14540" max-vertical-offset="18560">
-          <caret line="727" column="84" selection-start-line="727" selection-start-column="84" selection-end-line="727" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/ui/datepicker/WheelMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="580" max-vertical-offset="4400">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/db/ChexingDengjiDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1800" max-vertical-offset="4560">
-          <caret line="90" column="16" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3780" max-vertical-offset="8100">
-          <caret line="189" column="36" selection-start-line="189" selection-start-column="36" selection-end-line="189" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/ActivityMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="960" max-vertical-offset="2900">
-          <caret line="74" column="77" selection-start-line="74" selection-start-column="77" selection-end-line="74" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6620">
-          <caret line="237" column="0" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/ShouXuDengJiHistory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="14540" max-vertical-offset="18560">
-          <caret line="727" column="84" selection-start-line="727" selection-start-column="84" selection-end-line="727" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/ui/datepicker/WheelMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="580" max-vertical-offset="4400">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/db/ChexingDengjiDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1800" max-vertical-offset="4560">
-          <caret line="90" column="16" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3780" max-vertical-offset="8100">
-          <caret line="189" column="36" selection-start-line="189" selection-start-column="36" selection-end-line="189" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/ActivityMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="3480">
-          <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6620">
-          <caret line="237" column="0" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/ShouXuDengJiHistory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="320" max-vertical-offset="17380">
-          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6620">
-          <caret line="237" column="0" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/ActivityMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="3120">
-          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/adapter/CarDengji2Adapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="128" max-vertical-offset="1860">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/adapter/BaoJiaListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="1300">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6620">
@@ -770,14 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4187" max-vertical-offset="6620">
-          <caret line="237" column="0" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/ActivityMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1574" max-vertical-offset="3200">
@@ -818,14 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2509" max-vertical-offset="3960">
           <caret line="148" column="38" selection-start-line="148" selection-start-column="38" selection-end-line="148" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.8523878" vertical-offset="0" max-vertical-offset="2900">
-          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -883,22 +797,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/communications/SoapAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34638554" vertical-offset="170" max-vertical-offset="4780">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/CarConfigurationDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1429" max-vertical-offset="28080">
-          <caret line="122" column="0" selection-start-line="121" selection-start-column="44" selection-end-line="122" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/dialog_chexing_xinxi.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.61290324" vertical-offset="8080" max-vertical-offset="10780">
@@ -920,7 +818,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/check_task_img_layout.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-32.258064" vertical-offset="0" max-vertical-offset="6380">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1000" max-vertical-offset="6380">
           <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
           <folding />
         </state>
@@ -931,38 +829,307 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/check_task_preview2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.612904" vertical-offset="3842" max-vertical-offset="15100">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4540" max-vertical-offset="38280">
           <caret line="227" column="27" selection-start-line="227" selection-start-column="27" selection-end-line="227" selection-end-column="27" />
-          <folding>
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#0;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#1;tag#LinearLayout#1;tag#LinearLayout#0;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#1;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-            <element signature="tag#LinearLayout#1;tag#LinearLayout#1;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-            <element signature="tag#LinearLayout#2;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-            <element signature="tag#RelativeLayout#0;tag#LinearLayout#3;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#0;tag#LinearLayout#3;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-            <element signature="tag#LinearLayout#1;tag#LinearLayout#0;tag#LinearLayout#3;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-            <element signature="tag#LinearLayout#2;tag#LinearLayout#0;tag#LinearLayout#3;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-            <element signature="tag#LinearLayout#3;tag#LinearLayout#0;tag#LinearLayout#3;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-            <element signature="tag#LinearLayout#4;tag#LinearLayout#0;tag#LinearLayout#3;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-            <element signature="tag#LinearLayout#5;tag#LinearLayout#0;tag#LinearLayout#3;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-            <element signature="tag#LinearLayout#6;tag#LinearLayout#0;tag#LinearLayout#3;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-            <element signature="tag#LinearLayout#7;tag#LinearLayout#0;tag#LinearLayout#3;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-            <element signature="tag#LinearLayout#8;tag#LinearLayout#0;tag#LinearLayout#3;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-            <element signature="tag#LinearLayout#11;tag#LinearLayout#0;tag#LinearLayout#3;tag#LinearLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/communications/SoapAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4800">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/car_configuration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.142858" vertical-offset="992" max-vertical-offset="3920">
+          <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/car_dengji2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2700">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/car_configuration_detail.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="25180">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.0" vertical-offset="3662" max-vertical-offset="6620">
+          <caret line="186" column="13" selection-start-line="186" selection-start-column="11" selection-end-line="186" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/CheckActivity2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4160">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/config/AppPreference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1250" max-vertical-offset="4640">
+          <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+          <folding>
+            <element signature="e#2014#2015#0" expanded="true" />
+            <element signature="e#2060#2061#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/car_dengji1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2660">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/staticdata/CarConfigData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31690142" vertical-offset="0" max-vertical-offset="4280">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/CarDengji2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="893" max-vertical-offset="5360">
+          <caret line="90" column="45" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="45" />
+          <folding>
+            <element signature="e#2220#2893#0" expanded="true" />
+            <element signature="e#2888#2889#0" expanded="true" />
+            <element signature="e#2931#3031#0" expanded="true" />
+            <element signature="e#3026#3027#0" expanded="true" />
+            <element signature="e#3062#3575#0" expanded="true" />
+            <element signature="e#3570#3571#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/car_dengji3.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2140">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/CarDengji3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="3860">
+          <caret line="75" column="45" selection-start-line="75" selection-start-column="45" selection-end-line="75" selection-end-column="45" />
+          <folding>
+            <element signature="e#2044#2638#0" expanded="true" />
+            <element signature="e#2633#2634#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_shouxu_dengji.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="28300">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/car_dengji.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="40020">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/car_check.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="27300">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/CarDengji1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3700">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="23" />
+          <folding>
+            <element signature="e#2438#2936#0" expanded="true" />
+            <element signature="e#2931#2932#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/CarCheckActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="10875" max-vertical-offset="15780">
+          <caret line="613" column="53" selection-start-line="613" selection-start-column="53" selection-end-line="613" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23341523" vertical-offset="1330" max-vertical-offset="2940">
+          <caret line="76" column="42" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/CheckTaskPreviewActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48525074" vertical-offset="17991" max-vertical-offset="23120">
-          <caret line="965" column="130" selection-start-line="965" selection-start-column="130" selection-end-line="965" selection-end-column="130" />
+        <state vertical-scroll-proportion="0.09313155" vertical-offset="0" max-vertical-offset="23260">
+          <caret line="36" column="37" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/car_dengji4_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1500">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/adapter/CarKeyCofigurationAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44954127" vertical-offset="328" max-vertical-offset="2220">
+          <caret line="55" column="76" selection-start-line="55" selection-start-column="76" selection-end-line="55" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/car_dengji4.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27797833" vertical-offset="7749" max-vertical-offset="9120">
+          <caret line="399" column="64" selection-start-line="399" selection-start-column="41" selection-end-line="399" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/CarDengji4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.37931" vertical-offset="1850" max-vertical-offset="13120">
+          <caret line="142" column="59" selection-start-line="142" selection-start-column="59" selection-end-line="142" selection-end-column="59" />
+          <folding>
+            <element signature="e#25517#25663#0" expanded="true" />
+            <element signature="e#25651#25652#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/CarConfigurationActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3588" max-vertical-offset="4880">
+          <caret line="233" column="71" selection-start-line="233" selection-start-column="71" selection-end-line="233" selection-end-column="71" />
+          <folding>
+            <element signature="e#5122#5235#0" expanded="true" />
+            <element signature="e#5230#5231#0" expanded="true" />
+            <element signature="e#5272#5389#0" expanded="true" />
+            <element signature="e#5384#5385#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/CarConfigurationDetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3038417" vertical-offset="1200" max-vertical-offset="28660">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+          <folding>
+            <element signature="e#39940#39973#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/jingmicheck/JingMiCarCheckActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3251" max-vertical-offset="9300">
+          <caret line="256" column="21" selection-start-line="256" selection-start-column="21" selection-end-line="256" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/CheckActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="1280">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/CarDengji.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.586207" vertical-offset="3480" max-vertical-offset="62920">
+          <caret line="228" column="49" selection-start-line="228" selection-start-column="49" selection-end-line="228" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guanghui/car/ShouXuDengJiAcitivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38066825" vertical-offset="13241" max-vertical-offset="53760">
+          <caret line="821" column="32" selection-start-line="821" selection-start-column="32" selection-end-line="821" selection-end-column="32" />
+          <folding>
+            <element signature="e#14622#14910#0" expanded="true" />
+            <element signature="e#14902#14903#0" expanded="true" />
+            <element signature="e#23065#23216#0" expanded="true" />
+            <element signature="e#23203#23204#0" expanded="true" />
+            <element signature="e#23624#23844#0" expanded="true" />
+            <element signature="e#23837#23838#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

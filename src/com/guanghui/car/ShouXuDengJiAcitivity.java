@@ -51,6 +51,8 @@ import com.guanghui.car.ui.DateTimePickDialogUtil;
 
 /**
  * 手续登记主界面
+ * 车辆检测第一步
+ * 拍照,车牌号,发动机号码,车架号等等
  * 
  * @author zhangyun
  * 
@@ -1753,21 +1755,21 @@ public class ShouXuDengJiAcitivity extends Activity {
 						else
 						{
 							
-							Handler handler = new Handler()
-							{
-
-								@Override
-								public void handleMessage(Message msg) {
-									super.handleMessage(msg);
-									
-									Intent intent = new Intent();
-									intent.setClass(context, CarDengji.class);
-									intent.putExtra("VIN", sx_edit_car_shibie_numer.getText().toString().trim());									
-									new AppPreference(context).setHistoryResourceID(HistoryResourceID);
-									startActivity(intent);
-								}
-								
-							};
+//							Handler handler = new Handler()
+//							{
+//
+//								@Override
+//								public void handleMessage(Message msg) {
+//									super.handleMessage(msg);
+//
+//									Intent intent = new Intent();
+//									intent.setClass(context, CarDengji.class);
+//									intent.putExtra("VIN", sx_edit_car_shibie_numer.getText().toString().trim());
+//									new AppPreference(context).setHistoryResourceID(HistoryResourceID);
+//									startActivity(intent);
+//								}
+//
+//							};
 							
 							
 							
@@ -1780,7 +1782,7 @@ public class ShouXuDengJiAcitivity extends Activity {
 //							else
 //							{
 								Intent intent = new Intent();
-								intent.setClass(context, CarDengji.class);
+								intent.setClass(context, CarDengji1.class);
 								intent.putExtra("VIN", sx_edit_car_shibie_numer.getText().toString().trim());								
 								new AppPreference(context).setHistoryResourceID(HistoryResourceID);
 								startActivity(intent);

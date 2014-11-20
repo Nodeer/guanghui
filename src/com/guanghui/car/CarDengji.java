@@ -36,7 +36,8 @@ import com.guanghui.car.db.NewChexingDengjiDB;
 
 /**
  * 新的车型登记新界面
- * 
+ * 选择车型,变速箱,发动机功率,配置详细信息
+ *
  * @author zhangyun
  * 
  */
@@ -3253,7 +3254,10 @@ public class CarDengji extends Activity {
 		{
 			if(edit)
 			{
-				finish();
+                Intent intent2 = new Intent();
+                intent2.setClass(context, CheckTaskPreviewActivity.class);
+                startActivity(intent2);
+//                finish();
 			}
 			
 		}
