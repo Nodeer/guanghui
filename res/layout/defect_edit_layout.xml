@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#88000000"
+                android:padding="10px">
+
+    <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100px"
+            android:orientation="horizontal"
+            android:padding="10px">
+
+        <LinearLayout
+                android:id="@+id/left_layout"
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_shape_bg"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/defect_depart_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="20dp"
+                    android:background="@drawable/pop_title_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="40px"
+                    android:text="后排座椅"
+                    android:textColor="@android:color/black"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#ffe6ddca"
+                    android:contentDescription="缺陷表格的标题部分"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="150px"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/layout_shape_trans_bg"
+                        android:gravity="center"
+                        android:text="缺陷属性"
+                        android:textColor="@color/black"/>
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/layout_shape_trans_bg"
+                        android:gravity="center"
+                        android:text="缺陷名称"
+                        android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/left_layout_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="缺陷正文部分"
+                    android:orientation="vertical">
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/right_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="libs1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../intellij workspace/shikewang/libs/GifView.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../intellij workspace/shikewang/libs/umeng-analytics-v5.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../intellij workspace/shikewang/libs/alipay.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../intellij workspace/shikewang/libs/gson-2.2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../intellij workspace/shikewang/libs/android-async-http-1.4.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../intellij workspace/shikewang/libs/UPPayAssistEx.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../intellij workspace/shikewang/libs/libammsdk.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../intellij workspace/shikewang/libs/android-support-v4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../intellij workspace/shikewang/libs/universal-image-loader-1.8.7-snapshot-with-sources.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

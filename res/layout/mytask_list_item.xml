@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:gravity="center_vertical"
+    >
+
+    <TextView
+        android:id="@+id/taskId_textV"
+        style="@style/mytask_list_item_text"
+        android:layout_width="30dip"
+        android:layout_height="fill_parent"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/username_textV"
+        style="@style/mytask_list_item_text"
+        android:layout_width="70dip"
+        android:layout_height="fill_parent"
+        android:text="张三三三" />
+
+    <TextView
+        android:id="@+id/telephone_textV"
+        style="@style/mytask_list_item_text"
+        android:layout_width="105dip"
+        android:layout_height="fill_parent"
+        android:text="12345678912" />
+
+    <TextView
+        android:id="@+id/auto_type_textV"
+        style="@style/mytask_list_item_text"
+        android:layout_width="135dip"
+        android:layout_height="fill_parent"
+        android:text="Q5q5q5" />
+
+    <TextView
+        android:id="@+id/auto_plate_textV"
+        style="@style/mytask_list_item_text"
+        android:layout_width="80dip"
+        android:layout_height="fill_parent"
+        android:text="苏B08933" />
+
+    <TextView
+        android:id="@+id/outlet_textV"
+        android:visibility="gone"
+        style="@style/mytask_list_item_text"
+        android:layout_width="60dip"
+        android:layout_height="fill_parent"
+        android:text="我的门店的"/>
+
+    <TextView
+        android:id="@+id/area_textV"
+        android:visibility="gone"
+        style="@style/mytask_list_item_text"
+        android:layout_width="80dip"
+        android:layout_height="fill_parent"
+        android:text="上海是" />    
+    
+
+    <TextView
+        android:id="@+id/meetTime_textV"
+        style="@style/mytask_list_item_text"
+        android:layout_width="95dip"
+        android:layout_height="fill_parent"
+        android:text="2013-10-22 22:37:12" />
+    
+    <TextView
+        android:id="@+id/area_textjiance_time"
+        style="@style/mytask_list_item_text"
+        android:layout_width="95dip"
+        android:layout_height="fill_parent"
+         android:text="2013-10-22 22:37:12" />
+
+    <TextView
+        android:id="@+id/state_textV"
+        android:layout_width="65dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="已接受  还未检测"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+
+       android:layout_width="fill_parent"
+       android:layout_height="75dip" 
+       android:gravity="center_horizontal"
+       android:layout_gravity="center_horizontal">
+       
+        <TextView
+            android:id="@+id/operate_textV"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="查看"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textSize="14sp" 
+            android:visibility="gone"/>
+        
+        <Button
+            android:id="@+id/operate_button"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+             android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

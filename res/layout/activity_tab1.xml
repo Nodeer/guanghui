@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" 
+    android:focusable="true"  
+    android:focusableInTouchMode="true"
+    >
+
+    
+    <!-- 最下面的按钮 -->
+
+    <RelativeLayout
+        android:id="@+id/buildtask_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_button_color"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buildtask_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/btn_mytask_build" />
+    </RelativeLayout>
+    <!-- 页面显示内容 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buildtask_layout"
+        android:layout_below="@id/system_title"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/bg" >
+        
+        <!-- 顶部的搜索区域 -->
+        <RelativeLayout
+            android:id="@+id/search_rely"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/common_titlebar" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/title_bar_jiantou"
+                android:contentDescription="@string/line" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="搜索任务"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/tab1_search_btn"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="2dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="2dip"
+                android:background="@drawable/btn_style_2"
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="@color/white"
+                android:textSize="14dip" />
+
+        </RelativeLayout>
+        
+        <LinearLayout 
+            android:layout_below="@+id/search_rely"            
+            android:id="@+id/search_ly"
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"        	
+        	android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@color/mytask_table_title_bg"
+        	android:orientation="vertical">
+            <!-- 搜索日期 -->
+            <LinearLayout
+            android:layout_marginTop="5dip"
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center_vertical"
+            >
+            <TextView 
+                android:text="预约时间："
+                android:layout_marginLeft="10dip"
+                android:textSize="17dip"
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/edt_startdate"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_gravity="center_vertical"
+                android:focusable="false"
+                android:inputType="none"
+                android:hint="开始日期" />
+  
+            <TextView 
+                android:layout_marginLeft="20dip"
+                android:text="-"
+                android:textSize="17dip"
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_marginRight="20dip"
+                />  
+            <EditText 
+                android:id="@+id/edt_enddate"
+                android:layout_width="180dip"
+        		android:layout_height="wrap_content"
+        		android:layout_gravity="center_vertical"
+                android:focusable="false"
+                android:inputType="none"
+                android:hint="结束日期"
+                />  
+                
+            </LinearLayout>
+            
+            <!-- 搜索状态 -->
+            <LinearLayout
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center_vertical"
+            >
+            <TextView 
+                android:text="完成状态："
+                android:layout_marginLeft="10dip"
+                android:textSize="17dip"
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+                />
+            <RadioGroup 
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:layout_marginLeft="20dip"
+                    android:id="@+id/tab1_radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="所有" />
+
+                <RadioButton
+                    android:id="@+id/tab1_radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dip"
+                    android:text="待接收" />
+
+                <RadioButton 
+                    android:id="@+id/tab1_radio3"
+                    android:layout_marginLeft="30dip"
+                    android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:text="待检测"
+                    />   
+               <RadioButton 
+                    android:id="@+id/tab1_radio4"
+                    android:layout_marginLeft="30dip"
+                    android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:text="检测中"
+                    />  
+               <RadioButton 
+                    android:id="@+id/tab1_radio5"
+                    android:layout_marginLeft="30dip"
+                    android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:text="待定价"
+                    />              
+            </RadioGroup>
+                
+            </LinearLayout>
+        </LinearLayout>
+        
+        
+
+        <RelativeLayout
+            android:layout_below="@+id/search_ly"
+            android:id="@+id/title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/common_titlebar" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/title_bar_jiantou"
+                android:contentDescription="@string/line" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/task_list"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/activity_mytasks_btn_shuaxin"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"                
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_marginTop="2dip"
+                android:layout_marginBottom="2dip"
+                android:layout_marginRight="10dip"
+                android:text="刷新"
+                android:textSize="14dip"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_style_2" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/tabletitle_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_below="@id/title_layout"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@color/mytask_table_title_bg"            
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/mytask_table_text"
+                android:layout_width="30dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center" />
+
+            <TextView
+                style="@style/mytask_table_text"
+                android:layout_width="70dip"
+                android:layout_height="fill_parent"
+                android:text="客户\n姓名" />
+
+            <TextView
+                style="@style/mytask_table_text"
+                android:layout_width="120dip"
+                android:layout_height="fill_parent"
+                android:text="@string/telephone" />
+
+            <TextView
+                style="@style/mytask_table_text"
+                android:layout_width="120dip"
+                android:layout_height="fill_parent"
+                android:text="@string/auto_type" />
+
+            <TextView
+                style="@style/mytask_table_text"
+                android:layout_width="80dip"
+                android:layout_height="fill_parent"
+                android:text="@string/auto_plate" />
+
+            <TextView
+                android:visibility="gone"
+                style="@style/mytask_table_text"
+                android:layout_width="60dip"
+                android:layout_height="fill_parent"
+                android:text="@string/outlet" />
+
+            <TextView
+                android:visibility="gone"
+                style="@style/mytask_table_text"
+                android:layout_width="80dip"
+                android:layout_height="fill_parent"
+                android:text="@string/area" />
+
+            
+            
+            <TextView
+                style="@style/mytask_table_text"
+                android:layout_width="100dip"
+                android:layout_height="fill_parent"
+                android:text="预约检测\n时间" />
+            
+            <TextView
+                style="@style/mytask_table_text"
+                android:layout_width="100dip"
+                android:layout_height="fill_parent"
+                android:text="检测完成\n时间" />
+
+            <TextView
+                style="@style/mytask_table_text"
+                android:layout_width="50dip"
+                android:layout_height="fill_parent"
+                android:text="@string/state" />
+
+            <TextView
+                style="@style/mytask_table_text"
+                android:layout_width="90dip"
+                android:layout_height="fill_parent"
+                android:text="@string/operate" />
+        </LinearLayout>
+
+        <ListView
+            android:background="@drawable/car_check_linearlayout"
+            android:id="@+id/task_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/tabletitle_layout"
+            android:divider="@drawable/k2"
+			android:dividerHeight="2dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginBottom="20dip"
+            android:fadeScrollbars="false"
+            android:cacheColorHint="#00000000" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

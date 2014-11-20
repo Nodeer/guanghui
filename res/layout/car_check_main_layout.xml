@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+
+    <LinearLayout
+        android:id="@+id/check_title_layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/layout_title" />
+
+        <include layout="@layout/layout_common_tab_title" />
+
+        <include layout="@layout/title_renwu" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/save_btn_bg"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_btn_bg"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <com.guanghui.car.jingmicheck.widget.FragmentTabHost
+        android:layout_marginLeft="5dip"
+       android:layout_marginRight="5dip"
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_layout"
+        android:layout_below="@id/check_title_layout2" 
+        android:background="@drawable/settingbg"
+        >
+
+        <LinearLayout
+           
+            android:id="@+id/tab_host_index"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tab_waiguan"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@drawable/waiguan_btn_bg" />
+
+            <TextView
+                android:id="@+id/tab_neishi"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@drawable/neishi_btn_bg"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tab_gujia"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@drawable/gujia_btn_bg"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tab_zhuangzhi"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@drawable/zhuangzhi_btn_bg"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/tab_host_continar"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+        </FrameLayout>
+    </com.guanghui.car.jingmicheck.widget.FragmentTabHost>
+
+</RelativeLayout>

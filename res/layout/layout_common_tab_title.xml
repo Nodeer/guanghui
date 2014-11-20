@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_title_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="60dip"
+    android:layout_marginLeft="5dip"
+    android:layout_marginRight="5dip"
+    android:background="@drawable/tab_style_title_bg" >
+
+  
+    <LinearLayout
+        android:id="@+id/left_tab_title_layout"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tab1_label_text"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/tab_selector_title"
+            android:gravity="center"
+            android:text="@string/tab_one_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        
+        <!-- 第二个分页标签 -->
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tab2_label_text"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/tab_two_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+       
+        <!-- 第三个分页标签 -->
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tab3_label_text"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/tab_three_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <!-- 第四个分页标签 -->
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tab4_label_text"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    
+    <TextView 
+        android:id="@+id/tab_label_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+       	android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="测 试 文 本"
+        
+        />
+    
+    
+</RelativeLayout>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/car_reply_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/layout_title" />
+
+        <include layout="@layout/layout_common_tab_title" />
+
+       
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="#666666" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/car_reply_switch_big_title"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/car_reply_return"
+                android:layout_width="120dip"
+                android:layout_height="50dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/save_style"
+                android:text="@string/car_reply_return"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </LinearLayout>
+ <LinearLayout
+            android:id="@+id/reply1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <include layout="@layout/common_bottom" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/reply1"
+        android:layout_below="@id/car_reply_title_layout"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/car_check_linearlayout" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="@string/car_reply_switch_question_type"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/car_reply_car_card_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dip"
+                    android:text="@string/car_reply_now_card_title10"
+                    android:checked="true"
+                    android:textColor="#ff1f34" />
+
+                <RadioButton
+                    android:id="@+id/car_reply_car_model_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/car_reply_now_card_title11"
+                    android:textColor="#ff1f34" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/car_check_linearlayout"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="140dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/car_reply_now_card_title"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/car_reply_now_card_title_edittext"
+                    android:layout_width="200dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_height="wrap_content"
+                    android:inputType="textImeMultiLine"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="@string/car_reply_now_card_title1"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+            <TextView
+                    android:layout_width="140dip"
+                    android:gravity="center_vertical|right"
+                    android:layout_height="fill_parent"
+                    android:text="@string/car_reply_now_card_title2"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/car_reply_sheng_edittext"
+                    android:layout_width="150dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_height="wrap_content"
+                    android:inputType="textImeMultiLine" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center"
+                    android:text="@string/car_reply_now_card_title3"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/car_reply_city_eidtext"
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="44dp"
+                    android:inputType="textImeMultiLine" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center"
+                    android:text="@string/car_reply_now_card_title4"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            
+            
+            </LinearLayout>
+            
+            
+            
+            
+            
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dip"
+                android:background="#ccbfa3" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="140dip"
+                    android:gravity="center_vertical|right"
+                    android:layout_height="fill_parent"
+                    android:text="@string/car_reply_now_card_title5"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/car_reply_car_brand_edittext"
+                    android:layout_width="150dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_height="wrap_content"
+                    android:inputType="textImeMultiLine" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/car_reply_now_card_title6"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/car_reply_car_factory_edittext"
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="textImeMultiLine" />
+
+                
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+            
+            <TextView
+                    android:layout_width="140dip"
+                    android:gravity="center_vertical|right"
+                    android:layout_height="fill_parent"
+                    android:text="@string/car_reply_now_card_title7"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/car_reply_car_model_edittext"
+                    android:layout_width="150dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_height="wrap_content"
+                    android:inputType="textImeMultiLine" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/car_reply_now_card_title8"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/car_reply_car_xilie_edittext"
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="textImeMultiLine" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/car_reply_now_card_title9"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/car_reply_car_xinghao_edittext"
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="textImeMultiLine" />
+            
+            </LinearLayout>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

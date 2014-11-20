@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="#ffffffff"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView
+                android:id="@+id/defect_depart_info"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/defect_list_title_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="40px"
+                android:textSize="20dp"
+                android:text="外观"
+                android:textColor="@android:color/black"/>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50px"
+                android:background="#ffe6ddca"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_shape_trans_bg"
+                    android:gravity="center"
+                    android:text="部件名称"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_shape_trans_bg"
+                    android:gravity="center"
+                    android:text="缺陷属性"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_shape_trans_bg"
+                    android:gravity="center"
+                    android:text="缺陷名称"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_shape_trans_bg"
+                    android:gravity="center"
+                    android:text="缺陷程度"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/waiguan_show_layout"
+                android:background="@drawable/layout_shape_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/defect_list_title_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="40px"
+                android:textSize="20dp"
+                android:text="内饰"                
+                android:textColor="@android:color/black"/>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50px"
+                android:background="#ffe6ddca"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_shape_trans_bg"
+                    android:gravity="center"
+                    android:text="部件名称"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_shape_trans_bg"
+                    android:gravity="center"
+                    android:text="缺陷属性"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_shape_trans_bg"
+                    android:gravity="center"
+                    android:text="缺陷名称"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_shape_trans_bg"
+                    android:gravity="center"
+                    android:text="缺陷程度"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/neishi_show_layout"
+                android:background="@drawable/layout_shape_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/defect_list_title_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="40px"
+                android:textSize="20dp"
+                android:text="骨架"
+                android:textColor="@android:color/black"/>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50px"
+                android:background="#ffe6ddca"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_shape_trans_bg"
+                    android:gravity="center"
+                    android:text="部件名称"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_shape_trans_bg"
+                    android:gravity="center"
+                    android:text="缺陷属性"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_shape_trans_bg"
+                    android:gravity="center"
+                    android:text="缺陷名称"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_shape_trans_bg"
+                    android:gravity="center"
+                    android:text="缺陷程度"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/gujia_show_layout"
+                android:background="@drawable/layout_shape_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/defect_list_title_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="40px"
+                android:textSize="20dp"
+                android:text="装置"
+                android:textColor="@android:color/black"/>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50px"
+                android:background="#ffe6ddca"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_shape_trans_bg"
+                    android:gravity="center"
+                    android:text="部件名称"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_shape_trans_bg"
+                    android:gravity="center"
+                    android:text="缺陷属性"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_shape_trans_bg"
+                    android:gravity="center"
+                    android:text="缺陷名称"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_shape_trans_bg"
+                    android:gravity="center"
+                    android:text="缺陷程度"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/zhuangzhi_show_layout"
+                android:background="@drawable/layout_shape_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/isAuthCar"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+        
+        <Button 
+            android:id="@+id/btn_close"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/btn_style_one"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+        
+    </LinearLayout>
+
+
+</ScrollView>

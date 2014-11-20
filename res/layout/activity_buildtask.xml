@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".CarDengji2" >
+
+    <LinearLayout
+        android:id="@+id/system_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 系统标题 -->
+
+        <include layout="@layout/layout_title" />
+
+        <!-- 分页 -->
+
+        <include layout="@layout/layout_common_tab_title" />
+    </LinearLayout>
+
+    <!-- 最下面的按钮 -->
+
+    <RelativeLayout
+        android:id="@+id/submit_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_button_color"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/btn_buildtask_submit" />
+    </RelativeLayout>
+    <!-- 页面显示内容 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/submit_layout"
+        android:layout_below="@id/system_title"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/common_titlebar" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/line"
+                android:src="@drawable/title_bar_jiantou" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/build_task"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            
+            
+            <Button
+                android:id="@+id/activity_mytasks_btn_shuaxin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/btn_taskinfo_back" />
+            
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/splite_line"
+            style="@style/splite_line"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="30dip" />
+        
+        
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+            
+             <TextView 
+                 android:layout_width="125dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="登记人"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" 
+                 />
+             
+             <EditText 
+                 android:id="@+id/dengjiren"
+                 android:text="admin"
+                 android:layout_width="400dip"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                 />
+             
+             
+             
+             </LinearLayout>
+        <TextView
+            android:id="@+id/splite_line1"
+            style="@style/splite_line"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="125dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="@string/customer_name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/customer_name_editT"
+                android:layout_width="200dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:inputType="text" />
+
+            
+            
+            
+              <TextView
+                android:layout_width="125dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:padding="5dip"                
+                android:layout_marginLeft="100dip"
+                android:text="客户手机号"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/telephone_editT"
+                android:layout_width="200dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:inputType="number"
+                android:maxLength="11"
+                 />
+            
+        </LinearLayout>
+
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="125dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="@string/chexing"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/auto_type_editT"
+                android:layout_width="200dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="125dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="100dip"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="@string/chepai"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/chepai_editT"
+                android:layout_width="200dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:inputType="textCapCharacters"
+                />
+        </LinearLayout>
+        
+         <TextView
+            style="@style/splite_line"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="125dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="任务来源"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <RadioButton 
+                    android:id="@+id/buidtask_radiogroup1_radio1"
+                    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                    android:text="网络"
+                    android:checked="true"
+                    />
+                <RadioButton 
+                    android:id="@+id/buidtask_radiogroup1_radio2"
+                    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                    android:text="口碑"
+                    />
+                <RadioButton 
+                    android:id="@+id/buidtask_radiogroup1_radio3"
+                    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                    android:text="视觉广告"
+                    />
+                <RadioButton 
+                    android:id="@+id/buidtask_radiogroup1_radio4"
+                    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                    android:text="听觉广告"
+                    />
+                <RadioButton 
+                    android:id="@+id/buidtask_radiogroup1_radio5"
+                    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                    android:text="电话销售"
+                    />
+                <RadioButton 
+                    android:id="@+id/buidtask_radiogroup1_radio6"
+                    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                    android:text="展会"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/buidtask_radiogroup1_radio7"
+                android:layout_width="300dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="125dip"
+                android:hint="如有其他渠道，请输入"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </LinearLayout>
+        
+        
+        <TextView
+            style="@style/splite_line"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip" />
+        
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="VIN码"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/vin_editT"
+                android:layout_width="200dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:maxLength="17"
+                android:digits="abcdefghjklmnprstuvwxyzABCDEFGHJKLMNPRSTUVWXYZ0123456789"
+                 />
+
+            <TextView
+                android:layout_width="125dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="0dip"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="客户意向"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/yixiang_spinner"
+                style="@style/spinner_style"
+                android:layout_width="200dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:gravity="center" >
+            </Spinner>
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/splite_line2"
+            style="@style/splite_line"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip" />
+        
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="任务提供区域"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/district_spinner"
+                style="@style/spinner_style"
+                android:layout_width="240dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:gravity="center" >
+            </Spinner>
+            
+            <TextView
+                android:layout_width="132dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginLeft="60dip"
+                android:padding="5dip"
+                android:text="任务提供部门"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/bumen_spinner"
+                style="@style/spinner_style"
+                android:layout_width="200dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:gravity="center" >
+            </Spinner>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="任务提供门店"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/outlet_spinner"
+                style="@style/spinner_style"
+                android:layout_width="240dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:gravity="center" >
+            </Spinner>
+
+            <TextView
+                android:layout_width="132dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="60dip"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="任务提供人"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/saler_editT"
+                android:layout_width="200dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:inputType="text" />
+        </LinearLayout>
+        
+        
+           
+        <TextView
+            style="@style/splite_line"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip" />
+        
+        
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="125dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="检测区域"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/jiancequyu_editT"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:focusable="false"
+                android:enabled="false"
+                android:inputType="none" />
+            
+            
+          
+
+            <TextView
+                android:layout_width="132dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="100dip"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="检测门店"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/jiancemendian_editT"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="text"
+                android:enabled="false"
+                android:singleLine="true" />
+
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="125dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="检测人"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/jianceren_editT"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:focusable="false"
+                android:enabled="false"
+                android:inputType="none" />
+            
+            </LinearLayout>
+        <TextView
+            
+            style="@style/splite_line"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip" />
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="预约检测时间"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/meet_time_editT"
+                android:layout_width="200dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:focusable="false"
+                android:inputType="none" />
+            
+            
+          
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="100dip"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="预约检测地点"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/checkSpace_editT"
+                android:layout_width="200dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:inputType="text" />
+        </LinearLayout>
+        
+         <TextView
+            style="@style/splite_line"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip" />
+         
+        
+
+
+        
+
+     
+        
+        
+        
+        
+    </LinearLayout>
+
+</RelativeLayout>

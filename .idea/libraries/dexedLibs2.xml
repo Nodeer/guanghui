@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="dexedLibs2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/annotations-06d845c7c56427b837a7ef31a3a7a9b9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/universal-image-loader-1.9.0-3994581050e57497af8ccbc33e7ed2b0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/android-support-v4-7e98a55127d7c7d9044700afd1927e9b.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/gson-2.2.2-3f6c40b86483200adf6580efbd447650.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/ksoap2-android-assembly-3.1.1-jar-with-dependencies-96b701cec042fbe5e57f5469699dc8a4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/gson-2.2.2-0ca046c250c1a91cecaaf04f7e6640c5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/universal-image-loader-1.9.0-ec2e5400520170586fc38e9ff0141033.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/android-support-v4-767f8a6d77a4f96b6d5ed38142c315f8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/ksoap2-android-assembly-3.1.1-jar-with-dependencies-81224bd66fbdbaaaf9183b60d1f6f8c5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

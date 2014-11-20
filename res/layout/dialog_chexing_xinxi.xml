@@ -1,0 +1,425 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/car_check_linearlayout"
+        android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:background="@drawable/common_titlebar">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:text="@string/info_preview_title3"
+                android:textColor="#ff1f34"
+                android:textSize="17sp"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/check_task_preview2_shouxu_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_vertical"
+                    android:text="车型："
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+
+            <TextView
+                    android:id="@+id/check_task_preview2_ly4_txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_vertical"
+                    android:text="车辆类别："
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+            <TextView
+                    android:id="@+id/check_task_preview2_ly4_txt2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_vertical"
+                    android:text="车身颜色："
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+            <TextView
+                    android:id="@+id/check_task_preview2_ly4_txt3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_vertical"
+                    android:text="变速箱类型："
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+            <TextView
+                    android:id="@+id/check_task_preview2_ly4_txt4"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_vertical"
+                    android:text="排量："
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+
+            <TextView
+                    android:id="@+id/check_task_preview2_ly4_txt5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_vertical"
+                    android:text="发动机功率："
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+
+            <TextView
+                    android:id="@+id/check_task_preview2_ly4_txt6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_vertical"
+                    android:text="关键配置："
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+            <TextView
+                    android:id="@+id/check_task_preview2_carModel_keyConfiguration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_vertical"
+                    android:text="选装配置："
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+            <TextView
+                    android:id="@+id/check_task_preview2_carModel_choiceConfiguration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_vertical"
+                    android:text="改装配置："
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+            <TextView
+                    android:id="@+id/check_task_preview2_carModel_changeConfiguration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_vertical"
+                    android:text="表显里程："
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+            <TextView
+                    android:id="@+id/check_task_preview2_carModel_distence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_vertical"
+                    android:text="码表改动："
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+
+            <TextView
+                    android:id="@+id/check_task_preview2_ly4_txt7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+
+        </LinearLayout>
+
+
+        <HorizontalScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+            <include layout="@layout/check_task_img_layout"/>
+
+        </HorizontalScrollView>
+
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_vertical"
+                    android:text="新车厂商指导价："
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+
+            <TextView
+                    android:id="@+id/check_task_preview2_ly4_txt12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:orientation="horizontal"
+                android:visibility="gone">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_vertical"
+                    android:text="新车当地最低价："
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+            <TextView
+                    android:id="@+id/check_task_preview2_ly4_txt13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:orientation="horizontal"
+                android:visibility="gone">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_vertical"
+                    android:text="二手车价格最低："
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+            <TextView
+                    android:id="@+id/check_task_preview2_ly4_txt14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:orientation="horizontal"
+                android:visibility="gone">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_vertical"
+                    android:text="二手车价格最高："
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+            <TextView
+                    android:id="@+id/check_task_preview2_ly4_txt15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

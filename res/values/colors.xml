@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="blue">#ffccddff</color>
+    <color name="red">#ffff0101</color>
+    <color name="title_num">#ff0000</color>
+    <color name="title_text">#ffffff</color>
+    <color name="mytask_table_title_bg">#e6ddca</color>
+    <color name="green">#008E00</color>
+    <color name="gray">#333333</color>
+    <color name="bottom_button_color">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="taskinfo_side">#e6ddca</color>
+
+    <color name="configuration_red">#cf0000</color>
+    <color name="configuration_green">#22ac38</color>
+    <color name="configuration_blue">#007bdc</color>
+    <color name="configuration_black">#000000</color>
+    <color name="configuration_white">#ffffff</color>
+    <color name="configuration_grey">#808080</color>
+    <color name="configuration_yellow">#fff100</color>
+    <color name="configuration_orange">#e8641b</color>
+     <color name="configuration_brown">#81511c</color>
+     <color name="configuration_purpe">#5e3aad</color>
+     
+    <!-- 精密检测 -->
+    <!-- A dark Holo shade of red -->
+    <color name="holo_red_dark">#ffcc0000</color>
+    <color name="common_bg_search_btn_normal">#ff9913</color> <!-- oranger -->
+    <color name="common_bg_search_btn_pressed">#e58911</color>
+    <color name="common_bg_notmember_btn_normal">#15a4d5</color> <!-- blue -->
+    <color name="common_bg_notmember_btn_pressed">#1393bf</color>
+    <color name="common_bg_fanxian_btn_normal">#29b22b</color> <!-- dark green -->
+    <color name="common_bg_fanxian_btn_pressed">#25a027</color>
+    <color name="common_bg_btn_disable">#bbbbbb</color> <!-- dark gray, all disable btn bg -->
+    <color name="common_text_btn_normal">#ffffff</color> <!-- white, same as pressed, same as disable -->
+    <color name="common_text_btn_disable">#7fffffff</color> <!-- 50% white -->
+    <color name="ui_bg_divider">#e4e4e4</color>
+    <color name="trans">#00ffffff</color>
+    <color name="mainbg">#fffaf3e6</color>
+</resources>

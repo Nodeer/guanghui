@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:orientation="vertical"    
+    >
+    
+    <RelativeLayout         
+    	android:layout_marginLeft="1dip"
+    	android:layout_marginRight="1dip"
+        android:layout_width="fill_parent"
+    	android:layout_height="50dip"
+    	android:background="#e6ddca"
+        >
+        
+        <TextView
+            android:id="@+id/car_dengji2_item_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:text="奥迪A3"
+            android:textSize="27dip" />
+    
+	    <ImageView 
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="20dip"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:background="@drawable/jiantou_1"
+	        />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:visibility="gone"
+        >
+        <ImageView 
+            android:id="@+id/car_dengji2_item_img1"
+            android:layout_marginLeft="3dip"
+            android:layout_width="170dip"
+       		android:layout_height="130dip"
+       		android:src="@drawable/ic_empty"
+            />
+         <ImageView 
+            android:id="@+id/car_dengji2_item_img2"
+            android:layout_marginLeft="20dip"
+            android:layout_width="170dip"
+       		android:layout_height="130dip"
+       		android:src="@drawable/ic_empty"
+            />
+          <ImageView 
+            android:id="@+id/car_dengji2_item_img3"
+            android:layout_marginLeft="20dip"
+            android:layout_width="170dip"
+       		android:layout_height="130dip"
+       		android:src="@drawable/ic_empty"
+            />
+           <ImageView 
+            android:id="@+id/car_dengji2_item_img4"
+            android:layout_marginLeft="20dip"
+            android:layout_width="170dip"
+       		android:layout_height="130dip"
+       		android:src="@drawable/ic_empty"
+            />
+        
+    </LinearLayout>
+    
+    
+</LinearLayout>
+    

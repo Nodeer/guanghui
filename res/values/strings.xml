@@ -1,0 +1,326 @@
+<resources>
+
+    <string name="app_name">广汇换车宝</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="back">返回</string>
+    <string name="apk_update_title">正在下载新版本,请稍候...</string>
+    <string name="service_back_error">与服务器交互出错!</string>
+    <string name="service_back_time_out">网络连接超时!</string>
+    <string name="try_again">重试</string>
+    <string name="process_dialog_message">正在获取数据...</string>
+    <string name="prompt">提示</string>
+    
+    
+    <string name="version">V1.23版</string>
+    <string name="version2">广汇换车宝V1.23版</string>
+    
+    
+    <string name="login_bottom">忘记密码请拨打 客服热线：</string>
+    <string name="login_bottom_tel_number">021-123456789</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="username_or_password_error">用户名或密码错误!</string>
+    <string name="server_error1">服务器数据异常!</string>
+    <string name="vin_parse_error">VIN码解析失败!</string>
+    <string name="login_suoding_tip">系统已被锁定,请在下面输入密码解锁</string>
+    <string name="login_out">注销</string>
+    <string name="car_check_out_star">外观评星</string>
+    <string name="car_check_zonghe_t">T级（二手车中最好车况）</string>
+    <!-- 状态栏 -->
+    <string name="tab_one_name">我的任务</string>
+    <string name="tab_two_name">通知新闻</string>
+    <string name="tab_three_name">个人设置</string>
+    <string name="title_check_jieshou">条待接收任务</string>
+    <string name="title_check_text">条待检测任务</string>
+    <string name="title_checking_text">条检测中任务</string>
+    <string name="line">line</string>
+    <!-- 外观评星 -->
+    <string name="car_check_out_star5">没有明显的缺陷</string>
+    <string name="car_check_out_star4">有些小缺陷，但状态良好</string>
+    <string name="car_check_out_star3">多少有些缺陷，作为二手车比较标准</string>
+    <string name="car_check_out_star2">有比较明显的缺陷</string>
+    <string name="car_check_out_star1">全车都有缺陷</string>
+    <!-- 内饰评星 -->
+    <string name="car_check_in_star">内饰评星</string>
+    <string name="car_check_in_star5">无缺陷，新车状态</string>
+    <string name="car_check_in_star4">有不显眼的缺陷，但状态良好</string>
+    <string name="car_check_in_star3">多少有些缺陷，可以向不介意的客户推荐</string>
+    <string name="car_check_in_star2">有缺陷，需要装修</string>
+    <string name="car_check_in_star1">有些零部件需要更换</string>
+    <!-- 事故评级 -->
+    <string name="accident_level">事故评级</string>
+    <string name="accident_check_a">A级</string>
+    <string name="accident_check_a_detail">(骨架部件：纵梁 | 维修历史：曾更换 | 现有缺陷：变形)</string>
+    <string name="accident_check_b">B级</string>
+    <string name="accident_check_b_detail">(骨架部件：纵梁 | 维修历史：曾更换 | 现有缺陷：变形)</string>
+    <string name="accident_check_c">C级</string>
+    <string name="accident_check_c_detail">(骨架部件：纵梁 | 维修历史：曾更换 | 现有缺陷：变形)</string>
+    <!-- 特殊车 -->
+    <string name="car_special">特殊车</string>
+    <string name="car_special1">泡水车（曾发生过水位高于车门槛部分而导致车内浸水现象的车辆）</string>
+    <string name="car_special2">火烧车（由于机械，电器，油路，事故及其他原因造成失火后修复的车辆）</string>
+    <string name="car_special3">外观改装车（改变车身颜色，内饰颜色，轮胎规格，轮圈规格，座位规格，方向盘规格，\n变速杆规格，前脸形状，车标，天窗，空气动力套件，灯光的车辆）</string>
+    <string name="car_special31">，变速杆规格，前脸形状，车标，天窗，空气动力套件，灯光的车辆）</string>
+    <string name="car_special4">动力改装车（改变点火系统，进气系统，排气系统，制动系统，悬挂系统，转向系统，传动系统的车辆）</string>
+    <string name="car_special5">车况差（发动机，变速箱需大修的车辆）</string>
+    <!-- 综合评级 -->
+    <string name="car_check_zonghe">综合评级</string>
+    <string name="car_check_zonghe_T">T级（二手车中最好车况）</string>
+    <string name="car_check_zonghe_I">I级（二手车中需中修达到R级的车况）</string>
+    <string name="car_check_zonghe_B">B级（二手车中较好车况）</string>
+    <string name="car_check_zonghe_O">O级（二手车中需大修达到R级的车况）</string>
+    <string name="car_check_zonghe_R">R级（二手车中标准车况）</string>
+    <string name="car_check_zonghe_E">E级（二手车中报废车况）</string>
+    <string name="car_check_zonghe_M">M级（二手车中需小修达到R级的车况）</string>
+    <!-- A级具体 -->
+    <string name="a_level1">骨架部件</string>
+    <string name="a_level2">横梁</string>
+    <string name="a_level3">水箱框架</string>
+    <string name="a_level4">后围板</string>
+    <string name="a_level5">纵梁</string>
+    <string name="a_level6">乘员舱底梁</string>
+    <string name="a_level7">下边梁</string>
+    <string name="a_level8">上边梁</string>
+    <string name="a_level9">A柱</string>
+    <string name="a_level10">B柱</string>
+    <string name="a_level11">C柱</string>
+    <string name="a_level12">D柱</string>
+    <string name="a_level13">前翼子内板</string>
+    <string name="a_level14">乘员舱底板</string>
+    <string name="a_level15">后翼子内板</string>
+    <string name="a_level16">尾箱底板</string>
+    <string name="a_level17">防火墙</string>
+    <string name="a_level18">后窗台</string>
+    <string name="a_title2_1">维修历史</string>
+    <string name="a_title3_1">现有缺陷</string>
+    <string name="a_novalue">/</string>
+    <string name="a_ever_fix">曾整形</string>
+    <string name="a_ever_fix1">曾整形已到/超过牛腿</string>
+    <string name="a_ever_fix11">曾整形未到牛腿</string>
+    <string name="a_ever_fix2">曾整形已到/超过备胎窟中部</string>
+    <string name="a_ever_fix22">曾整形未到备胎窟中部</string>
+    <string name="a_ever_change">曾更换</string>
+    <string name="a_ever_change1">变形</string>
+    <string name="a_ever_change2">变形已到/超过牛腿</string>
+    <string name="a_ever_change22">变形未到牛腿</string>
+    <string name="a_ever_change3">变形已到/超过备胎窟中部</string>
+    <string name="a_ever_change33">变形未到备胎窟中部</string>
+    <string name="login_error1">请输入帐号密码!</string>
+	<string name="login_error2">请先打开网络!</string>
+    <!-- 手续登记界面 -->
+    <string name="shouxu_dengji_camera_title">行驶证拍照窗口</string>
+    <string name="takePicture">拍照</string>
+    <string name="takePictureAgain">重拍</string>
+    <string name="shouxu_dengji_txt1">1.车牌号码：</string>
+    <string name="without_txt1">请输入车牌号码！</string>
+    <string name="shouxu_dengji_txt2">2.车牌归属地：</string>
+    <string name="without_txt2">请输入车牌归属地！</string>
+    <string name="shouxu_dengji_txt3">3.车架号：</string>
+    <string name="without_txt3">请输入车牌识别代号！</string>
+    <string name="shouxu_dengji_txt4">4.使用性质：</string>
+    <string name="without_txt4">请输入使用性质！</string>
+
+    <string name="shouxu_dengji_txt5">5.车辆类型：</string>
+    <string name="without_txt5">请选择车辆类型！</string>
+
+    <string name="shouxu_dengji_txt6">6.车辆型号：</string>
+    <string name="without_txt6">请输入品牌型号！</string>
+
+    <string name="shouxu_dengji_txt7">7.发动机号码：</string>
+    <string name="without_txt7">请输入发动机号码！</string>
+
+    <string name="shouxu_dengji_txt8">8.出厂日期：</string>
+    <string name="without_txt8">请输入出厂日期！</string>
+
+    <string name="shouxu_dengji_txt9">9.首次注册登记日期：</string>
+    <string name="without_txt9">请输入首次注册登记日期！</string>
+
+    <string name="shouxu_dengji_txt10">10.强制报废年限：</string>
+    <string name="without_txt10">请输入强制报废年限！</string>
+
+    <string name="shouxu_dengji_txt11">11.所有人：</string>
+    <string name="without_txt11">请输入所有人!</string>
+
+    <string name="shouxu_dengji_txt12">12.排放标准：</string>
+    <string name="without_txt12">请输入排放标准！</string>
+
+    <string name="shouxu_dengji_txt13">13.办证状态：</string>
+    <string name="without_txt13">请输入办证状态！</string>
+
+    <string name="shouxu_dengji_txt14">14.变更记录：</string>
+    <string name="without_txt14">请输入变更记录！</string>
+    <string name="without_biangengcishu">您有变更记录，但是未输入变更次数！</string>
+
+    <string name="shouxu_dengji_txt15">15.购置税：</string>
+    <string name="without_txt15">请输入购置税！</string>
+
+    <string name="shouxu_dengji_txt16">16.交强险有效期：</string>
+    <string name="without_txt16">请输入交强险有效期！</string>
+
+    <string name="shouxu_dengji_txt17">17.年检有效期：</string>
+    <string name="without_txt17">请输入年检有效期！</string>
+
+    <string name="shouxu_dengji_txt18">18.通行费有效期：</string>
+    <string name="without_txt18">请输入通行费有效期！</string>
+
+    <string name="shouxu_dengji_txt19">19.违章未处理记录：</string>
+    <string name="without_txt19">请输入违章未处理记录！</string>
+
+    <string name="shouxu_dengji_txt20">20.牌照额度：</string>
+    <string name="without_txt20">请输入牌照额度！</string>
+
+    <string name="shouxu_dengji_txt21">21.原厂钥匙：</string>
+    <string name="without_txt21">请输入原厂钥匙！</string>
+	<string name="without_yaoshishuliang">您拥有原厂钥匙，但是未输入钥匙数量！</string>
+	
+    <string name="shouxu_dengji_txt22">22.随车工具：</string>
+    <string name="without_txt22">请输入随车工具！</string>
+	<string name="without_suichegongju">请输入缺失的随车工具！</string>
+    <string name="shouxu_dengji_txt23">23.车辆使用说明书：</string>
+    <string name="without_txt23">请选择是否具有车辆使用说明书！</string>
+
+    <string name="shouxu_dengji_txt24">24.车辆保养手册：</string>
+    <string name="without_txt24">请选择是否具有车辆保养手册！</string>
+	<string name="without_txt25">请拍摄行驶证照片！</string>
+    <string name="error_save">请至少输入一项方可进行保存操作！</string>
+    <!-- 信息预览 -->
+    <string name="car_userinfo_price1">车辆收购价格：</string>
+    <string name="price_danwei">元</string>
+    <string name="chengjiao">成交选项：</string>
+    <string name="shangjijieguo">商机结果：</string>
+    <string name="undo_reson">未成交原因：</string>
+    <string name="undo_reson2">请输入未成交原因</string>
+    <string name="info_preview_title1">客户联系信息</string>
+    <string name="info_preview_title2">车辆手续信息</string>
+    <string name="info_preview_title3">车型信息</string>
+    <string name="info_preview_title4">车况评级信息</string>
+    <string name="info_preview_title">检测报告预览</string>
+    <!-- 反馈无可选项 -->
+    <string name="car_reply_switch_big_title">反馈-无可选项</string>
+    <string name="car_reply_switch_question_type">选择问题类别：</string>
+    <string name="car_reply_now_card_title">当前车牌照字冠:</string>
+    <string name="car_reply_now_card_title1">(首两位：区域汉字和其后字母)</string>
+    <string name="car_reply_now_card_title2">正确归属地：</string>
+    <string name="car_reply_now_card_title3">省</string>
+    <string name="car_reply_now_card_title4">市</string>
+    <string name="car_reply_now_card_title5">当前车辆品牌：</string>
+    <string name="car_reply_now_card_title6">厂商：</string>
+    <string name="car_reply_now_card_title7">车型：</string>
+    <string name="car_reply_now_card_title8">系列：</string>
+    <string name="car_reply_now_card_title9">型号：</string>
+    <string name="car_reply_now_card_title10">车牌 归属地</string>
+    <string name="car_reply_now_card_title11">车辆厂商品牌</string>
+    <string name="car_reply_return">返回</string>
+    <!-- 车型配置 -->
+    <string name="car_configuration_key">关键配置</string>
+    <string name="car_configuration_confirm">车辆配置确认</string>
+    <string name="car_configuration_change">改装配置</string>
+    <string name="car_configuration_choice">选装配置</string>
+    <string name="car_configuration_color">1.颜色：</string>
+    <string name="car_configuration_distance">2.表显里程：</string>
+    <string name="car_configuration_distance_kilo">公里</string>
+    <string name="car_configuration_distance_yingli">英里</string>
+    <string name="car_configuration_distance_change">码表改动</string>
+    <string name="car_configuration_photo">3.照片：</string>
+    <string name="car_configuration_price">4.新车价格：</string>
+    <string name="car_configuration_factory_price">厂商指导价：</string>
+    <string name="car_configuration_lowest_price">当地最低价：</string>
+    <string name="car_configuration_two_price">5.二手车价格：</string>
+    <string name="car_configuration_to">至</string>
+    <string name="car_configuration_net_get">联网获取</string>
+    <string name="car_left_qian">车头左前方</string>
+    <string name="car_right_back">车尾右后方</string>
+    <string name="car_center_in">中控台内饰</string>
+    <string name="car_yibiaopan">仪表盘</string>
+
+
+    <string name="chexingdengji_img_1">左前45度</string>
+    <string name="chexingdengji_img_2">驾驶位左侧(含左B柱)</string>
+    <string name="chexingdengji_img_3">左前门内侧</string>
+    <string name="chexingdengji_img_4">里程表</string>
+    <string name="chexingdengji_img_5">后排座左侧</string>
+    <string name="chexingdengji_img_6">中控与方向盘</string>
+    <string name="chexingdengji_img_7">左侧机身</string>
+    <string name="chexingdengji_img_8">后备箱整体</string>
+    <string name="chexingdengji_img_9">后备箱底板</string>
+    <string name="chexingdengji_img_10">右后45度</string>
+    <string name="chexingdengji_img_11">右侧车身</string>
+    <string name="chexingdengji_img_12">后排座右侧</string>
+    <string name="chexingdengji_img_13">副驾驶右侧(含右B柱)</string>
+    <string name="chexingdengji_img_14">出厂铭牌</string>
+    <string name="chexingdengji_img_15">发动机整体</string>
+    <string name="chexingdengji_img_16">发动机机舱右侧</string>
+    <string name="chexingdengji_img_17">发动机机舱左侧</string>
+    <string name="chexingdengji_img_18">轮毂</string>
+
+    <!-- 车型登记 -->
+    <string name="pinpai_choose">品牌厂家选择：</string>
+    <string name="seach">搜索</string>
+    <string name="pinpai">品牌：</string>
+    <string name="input_first_char">请输入名称的首字母</string>
+    <string name="car_type_choose">车型选择：</string>
+    <string name="input_first_changjia_char">请输入厂家首字母</string>
+    <string name="changjia_choose">选择厂家：</string>
+    <string name="car_xilie_type_choose">车型系列选择：</string>
+    <string name="car_xilie_type_choose2">车辆型号筛选</string>
+    <!-- 任务列表界面显示文字 -->
+    <string name="task_list">任务列表</string>
+    <string name="user_name">客户姓名</string>
+    <string name="telephone">手机</string>
+    <string name="auto_type">车型</string>
+    <string name="auto_plate">牌照</string>
+    <string name="outlet">门店</string>
+    <string name="area">所属区域</string>
+    <string name="meet_time">预约检测时间</string>
+    <string name="state">状态</string>
+    <string name="operate">操作</string>
+    <!-- 任务列表状态和操作显示的文字 -->
+    <string name="unreceived">未接收</string>
+    <string name="unchecked">已接收\n未检测</string>
+    <string name="checking">已接收\n正在检测</string>
+    <string name="checked">已接收\n检测完毕</string>
+    <string name="checkdingjia">已接收\n待定价</string>
+    <string name="receive_task">接收任务</string>
+    <string name="continue_task">继续执行</string>
+    <string name="look_up">查看</string>
+    <!-- 新建任务界面 -->
+    <string name="build_task">自建任务</string>
+    <string name="comefrom">来&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;源</string>
+    <string name="district">区&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;域</string>
+    <string name="chexing">车&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;型</string>
+    <string name="mengdian">门&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;店</string>
+    <string name="telephone1">手&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;机</string>
+    <string name="saler">销售顾问</string>
+    <string name="chepai">车&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;牌</string>
+    <string name="customer_name">客户姓名</string>
+    <string name="check_space">检测地点</string>
+    <string name="withoutSaler">请输入任务提供人！</string>
+    <string name="errorChepai">请输入正确的车牌号！</string>
+    <string name="errorMobileNum">请输入正确的电话号码！</string>
+    <string name="withoutChepai">请输入车牌号码！</string>
+    <string name="withoutCheXing">请输入车型！</string>
+    <string name="withoutCustomer">请输入客户姓名！</string>
+    <string name="withoutTelephone">请输入客户的联系电话！</string>
+    <string name="withoutMeetTime">请输入预约时间！</string>
+    <string name="withoutCheckPlace">请输入预约检测地点！</string>
+    <string name="withoutCheckVIN">请输入VIN码！</string>    
+    <string name="IdentificationCode_error">请输入正确的车架号格式！</string>
+     <string name="ManufactureDate_error">出厂日期不能大于当前日期！</string>
+     <string name="FirstEnrolmentDate_error">首次注册日期不能小于出厂日期，并且不能大于当前日期！</string>
+     <string name="InsuranceValidity_error">交强险日期不能小于出厂日期，并且不能大于当前检测日期的次年日期（即明年的今天）！</string>
+     <string name="AnnualInspectionValidity_error">年检日期不能小于首次注册登记日期，并且不能大于当前检测日期的次次年日期（即后年的今天）！</string>
+   <string name="ScrapDate_error">请输入强制报废年限</string>
+     <!-- 任务详情页面 -->
+	<string name="current_taskinfo">当前任务详情</string>
+	<string name="confirm_accept">确认受理</string>
+	<string name="confirm_accept_error">数据异常，请重新加载！</string>
+	<!-- 快速检测、精密检测选择页面 -->
+	<string name="fast_check">快速检测</string>
+	<string name="fast_check_info">通过评估师经验对车况概貌的快速评估</string>
+	<string name="precision_check">精密检测</string>
+	<string name="precision_check_info">通过广汇制定的标准化流程对车况综合评估记录</string>
+	<!-- 日期、时间选择对话框 -->
+	<string name="dateChoose">请选择日期：</string>
+	<string name="timeChoose">请选择时间：</string>
+</resources>

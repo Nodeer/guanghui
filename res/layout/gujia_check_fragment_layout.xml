@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:id="@+id/check_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="785px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10px"
+                android:layout_marginTop="10px">
+
+            <RadioGroup
+                    android:id="@+id/camera_radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10px"
+                    android:checkedButton="@+id/left_front"
+                    android:orientation="horizontal">
+
+                <RadioButton
+                        android:id="@+id/left_front"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/left_view_btn_bg"
+                        android:button="@null"/>
+
+                <RadioButton
+                        android:id="@+id/right_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/right_view_btn_bg"
+                        android:button="@null"/>
+            </RadioGroup>
+
+            <com.guanghui.car.jingmicheck.widget.CheckView
+                    android:id="@+id/check_view"
+                    android:layout_width="780px"
+                    android:layout_height="463px"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/gujia_left"/>
+        </RelativeLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:id="@+id/change_layout"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button
+                        android:id="@+id/add_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="添加热区"/>
+                <Button
+                        android:id="@+id/add_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="添加中心点"/>
+
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/defect_depart_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/defect_list_title_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="40px"
+                    android:textSize="20dp"
+                    android:text="缺陷列表"
+                    android:textColor="@android:color/black"/>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50px"
+                    android:background="#ffe6ddca"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/layout_shape_trans_bg"
+                        android:gravity="center"
+                        android:text="部件名称"
+        				android:textSize="20sp"
+                        android:textColor="@color/black"/>
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/layout_shape_trans_bg"
+                        android:gravity="center"
+        				android:textSize="20sp"
+                        android:text="缺陷属性"
+                        android:textColor="@color/black"/>
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/layout_shape_trans_bg"
+                        android:gravity="center"
+                        android:text="缺陷名称"
+        				android:textSize="20sp"
+                        android:textColor="@color/black"/>
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/layout_shape_trans_bg"
+                        android:gravity="center"
+                        android:text="缺陷程度"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/show_layout"
+                    android:layout_width="fill_parent"
+                    android:background="@drawable/layout_shape_bg"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

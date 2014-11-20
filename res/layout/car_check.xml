@@ -1,0 +1,1360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"    
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <!--
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:background="#000000"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    -->
+
+    <LinearLayout
+        android:id="@+id/check_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/layout_title" />
+
+        <include layout="@layout/layout_common_tab_title" />
+
+        <include layout="@layout/title_renwu" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/check1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <include layout="@layout/common_bottom" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/check1"
+        android:layout_below="@id/check_title_layout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/bg" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_weight="1"
+                android:background="@drawable/car_check_linearlayout"
+                android:orientation="horizontal" >
+
+                <!-- 外观 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:background="@drawable/common_titlebar" >
+
+                        <TextView
+                            style="@style/splite_line1"
+                            android:layout_marginTop="0.1dip" >
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/line"
+                            android:src="@drawable/title_bar_jiantou" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center"
+                            android:text="@string/car_check_out_star"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical" >
+
+                            <TextView style="@style/splite_line" />
+
+                            <RadioButton
+                                android:id="@+id/out_star5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:layout_marginRight="10dip"
+                                android:layout_weight="1"
+                                android:button="@drawable/check_style"
+                                android:checked="false" />
+
+                            <TextView style="@style/splite_line" />
+
+                            <RadioButton
+                                android:id="@+id/out_star4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:layout_weight="1"
+                                android:button="@drawable/check_style"
+                                android:checked="false" />
+
+                            <TextView style="@style/splite_line" />
+
+                            <RadioButton
+                                android:id="@+id/out_star3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:layout_weight="1"
+                                android:button="@drawable/check_style"
+                                android:checked="false" />
+
+                            <TextView style="@style/splite_line" />
+
+                            <RadioButton
+                                android:id="@+id/out_star2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:layout_weight="1"
+                                android:button="@drawable/check_style"
+                                android:checked="false" />
+
+                            <TextView style="@style/splite_line" />
+
+                            <RadioButton
+                                android:id="@+id/out_star1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:layout_weight="1"
+                                android:button="@drawable/check_style"
+                                android:checked="false" />
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView style="@style/splite_line" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:id="@+id/ratingBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dip"
+                                    android:background="@drawable/star5" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="center"
+                                    android:text="@string/car_check_out_star5"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <TextView style="@style/splite_line" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="33333" >
+
+                                <ImageView
+                                    android:id="@+id/ratingBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dip"
+                                    android:background="@drawable/star4" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="center"
+                                    android:text="@string/car_check_out_star4"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <TextView style="@style/splite_line" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="44444" >
+
+                                <ImageView
+                                    android:id="@+id/ratingBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dip"
+                                    android:background="@drawable/star3" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="center"
+                                    android:text="@string/car_check_out_star3"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <TextView style="@style/splite_line" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="55555" >
+
+                                <ImageView
+                                    android:id="@+id/ratingBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dip"
+                                    android:background="@drawable/star2" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="center"
+                                    android:text="@string/car_check_out_star2"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <TextView style="@style/splite_line" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="66666" >
+
+                                <ImageView
+                                    android:id="@+id/ratingBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dip"
+                                    android:background="@drawable/star1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="center"
+                                    android:text="@string/car_check_out_star1"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.1dip"
+                    android:layout_height="fill_parent"
+                    android:background="#ccbfa3"
+                    android:orientation="vertical" />
+                <!-- 内饰 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:background="@drawable/common_titlebar" >
+
+                        <TextView
+                            style="@style/splite_line1"
+                            android:layout_marginTop="0.1dip" >
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/line"
+                            android:src="@drawable/title_bar_jiantou" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center"
+                            android:text="@string/car_check_in_star"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical" >
+
+                            <TextView style="@style/splite_line" />
+
+                            <RadioButton
+                                android:id="@+id/in_star5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:layout_marginRight="10dip"
+                                android:layout_weight="1"
+                                android:button="@drawable/check_style"
+                                android:checked="false" />
+
+                            <TextView style="@style/splite_line" />
+
+                            <RadioButton
+                                android:id="@+id/in_star4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:layout_weight="1"
+                                android:button="@drawable/check_style"
+                                android:checked="false" />
+
+                            <TextView style="@style/splite_line" />
+
+                            <RadioButton
+                                android:id="@+id/in_star3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:layout_weight="1"
+                                android:button="@drawable/check_style"
+                                android:checked="false" />
+
+                            <TextView style="@style/splite_line" />
+
+                            <RadioButton
+                                android:id="@+id/in_star2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:layout_weight="1"
+                                android:button="@drawable/check_style"
+                                android:checked="false" />
+
+                            <TextView style="@style/splite_line" />
+
+                            <RadioButton
+                                android:id="@+id/in_star1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:layout_weight="1"
+                                android:button="@drawable/check_style"
+                                android:checked="false" />
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView style="@style/splite_line" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:id="@+id/ratingBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dip"
+                                    android:background="@drawable/star5" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="center"
+                                    android:text="@string/car_check_in_star5"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <TextView style="@style/splite_line" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="33333" >
+
+                                <ImageView
+                                    android:id="@+id/ratingBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dip"
+                                    android:background="@drawable/star4" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="center"
+                                    android:text="@string/car_check_in_star4"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <TextView style="@style/splite_line" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="44444" >
+
+                                <ImageView
+                                    android:id="@+id/ratingBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dip"
+                                    android:background="@drawable/star3" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="center"
+                                    android:text="@string/car_check_in_star3"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <TextView style="@style/splite_line" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="55555" >
+
+                                <ImageView
+                                    android:id="@+id/ratingBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dip"
+                                    android:background="@drawable/star2" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="center"
+                                    android:text="@string/car_check_in_star2"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <TextView style="@style/splite_line" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="66666" >
+
+                                <ImageView
+                                    android:id="@+id/ratingBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dip"
+                                    android:background="@drawable/star1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="center"
+                                    android:text="@string/car_check_in_star1"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 事故评级 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="5dip"
+                android:layout_weight="0.6"
+                android:background="@drawable/car_check_linearlayout"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:background="@drawable/common_titlebar" >
+
+                    <TextView
+                        style="@style/splite_line1"
+                        android:layout_marginTop="0.1dip" >
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/line"
+                        android:src="@drawable/title_bar_jiantou" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:text="@string/accident_level"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                    
+                    <TextView 
+                        android:id="@+id/chexiao_btn_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dip"
+                        android:text="点击撤销"
+                        android:textSize="17dip"
+                        android:textColor="@color/red"
+                        />
+                    
+                    
+                </RelativeLayout>
+
+                <TextView style="@style/splite_line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <RadioButton
+                            android:id="@+id/accident_a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1"
+                            android:button="@drawable/check_style"
+                            android:checked="false" />
+
+                        <TextView style="@style/splite_line" />
+
+                        <RadioButton
+                            android:id="@+id/accident_b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="5dip"
+                            android:layout_weight="1"
+                            android:button="@drawable/check_style"
+                            android:checked="false" />
+
+                        <TextView style="@style/splite_line" />
+
+                        <RadioButton
+                            android:id="@+id/accident_c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="5dip"
+                            android:layout_weight="1"
+                            android:button="@drawable/check_style"
+                            android:checked="false" />
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.9"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:text="@string/accident_check_a"
+                                android:textColor="#ff1f34"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="40dip"
+                                android:layout_marginRight="5dip"
+                                android:gravity="center"
+                                android:text="@string/accident_check_a_detail"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+
+                            <Button
+                                android:id="@+id/accident_a_detail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dip"
+                                android:background="@drawable/save_style"
+                                android:text="详情"
+                                android:textColor="#ffffff"
+                                android:textSize="18sp" />
+                        </RelativeLayout>
+
+                        <TextView style="@style/splite_line" />
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.9"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:text="@string/accident_check_b"
+                                android:textColor="#ff1f34"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="40dip"
+                                android:layout_marginRight="5dip"
+                                android:gravity="center"
+                                android:text="@string/accident_check_a_detail"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+
+                            <Button
+                                android:id="@+id/accident_b_detail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dip"
+                                android:background="@drawable/save_style"
+                                android:text="详情"
+                                android:textColor="#ffffff"
+                                android:textSize="18sp" />
+                        </RelativeLayout>
+
+                        <TextView style="@style/splite_line" />
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.9"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:text="@string/accident_check_c"
+                                android:textColor="#ff1f34"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="40dip"
+                                android:layout_marginRight="5dip"
+                                android:gravity="center"
+                                android:text="@string/accident_check_a_detail"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+
+                            <Button
+                                android:id="@+id/accident_c_detail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dip"
+                                android:background="@drawable/save_style"
+                                android:text="详情"
+                                android:textColor="#ffffff"
+                                android:textSize="18sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/car_check_linearlayout"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:background="@drawable/common_titlebar" >
+
+                    <TextView
+                        style="@style/splite_line1"
+                        android:layout_marginTop="0.1dip" >
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/line"
+                        android:src="@drawable/title_bar_jiantou" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:text="@string/car_special"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                    
+                    <TextView 
+                        android:id="@+id/chexiao_btn_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                         android:layout_marginRight="20dip"
+                        android:text="点击撤销"
+                        android:textSize="17dip"
+                        android:textColor="@color/red"
+                        />
+                </RelativeLayout>
+
+                <TextView style="@style/splite_line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <RadioButton
+                            android:id="@+id/special_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="10dip"
+                            android:button="@drawable/check_style"
+                            android:checked="false"
+                            android:text="@string/car_special1"
+                            android:textSize="14sp" />
+
+                        <TextView style="@style/splite_line" />
+
+                        <RadioButton
+                            android:id="@+id/special_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="5dip"
+                            android:button="@drawable/check_style"
+                            android:checked="false"
+                            android:text="@string/car_special2"
+                            android:textSize="14sp" />
+
+                        <TextView style="@style/splite_line" />
+
+                        <RadioButton
+                            android:id="@+id/special_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="5dip"
+                            android:button="@drawable/check_style"
+                            android:checked="false"
+                            android:text="@string/car_special3"
+                            android:textSize="14sp" />
+
+                        <TextView style="@style/splite_line" />
+
+                        <RadioButton
+                            android:id="@+id/special_four"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="5dip"
+                            android:button="@drawable/check_style"
+                            android:checked="false"
+                            android:text="@string/car_special4"
+                            android:textSize="14sp" />
+
+                        <TextView style="@style/splite_line" 
+                            android:visibility="gone"
+                            />
+
+                        <RadioButton
+                            android:visibility="gone"
+                            android:id="@+id/special_five"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="5dip"
+                            android:button="@drawable/check_style"
+                            android:checked="false"
+                            android:text="@string/car_special5"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 特殊车 -->
+
+
+            <!--
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:layout_weight="1.1"
+            android:background="@drawable/car_check_linearlayout"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/common_titlebar"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:text="@string/car_special"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView style="@style/splite_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/special_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="5dip"
+                    android:button="@drawable/check_style"
+                    android:checked="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:gravity="center"
+                    android:text="@string/car_special1"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <TextView style="@style/splite_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/special_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="5dip"
+                    android:button="@drawable/check_style"
+                    android:checked="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:gravity="center"
+                    android:text="@string/car_special2"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <TextView style="@style/splite_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/special_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="5dip"
+                    android:button="@drawable/check_style"
+                    android:checked="false" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:gravity="center"
+                        android:text="@string/car_special3"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView style="@style/splite_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/special_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="5dip"
+                    android:button="@drawable/check_style"
+                    android:checked="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:gravity="center"
+                    android:text="@string/car_special4"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <TextView style="@style/splite_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/special_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="5dip"
+                    android:button="@drawable/check_style"
+                    android:checked="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:gravity="center"
+                    android:text="@string/car_special5"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+            -->
+            <!-- 综合评级 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/car_check_linearlayout"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:background="@drawable/common_titlebar" >
+
+                    <TextView
+                        style="@style/splite_line1"
+                        android:layout_marginTop="0.1dip" >
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/line"
+                        android:src="@drawable/title_bar_jiantou" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:text="@string/car_check_zonghe"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <TextView style="@style/splite_line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <RadioGroup
+                        android:id="@+id/zonghe_group1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/zonghe_t"
+                            android:layout_width="340dip"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="5dip"
+                            android:button="@drawable/check_style"
+                            android:checked="false"
+                            android:text="@string/car_check_zonghe_T"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/zonghe_i"
+                            android:layout_width="320dip"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="5dip"
+                            android:button="@drawable/check_style"
+                            android:checked="false"
+                            android:text="@string/car_check_zonghe_I"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+
+                    <TextView style="@style/splite_line" />
+
+                    <RadioGroup
+                        android:id="@+id/zonghe_group2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/zonghe_b"
+                            android:layout_width="340dip"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="5dip"
+                            android:button="@drawable/check_style"
+                            android:checked="false"
+                            android:text="@string/car_check_zonghe_B"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/zonghe_o"
+                            android:layout_width="320dip"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="5dip"
+                            android:button="@drawable/check_style"
+                            android:checked="false"
+                            android:text="@string/car_check_zonghe_O"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+
+                    <TextView style="@style/splite_line" />
+
+                    <RadioGroup
+                        android:id="@+id/zonghe_group3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/zonghe_r"
+                            android:layout_width="340dip"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="5dip"
+                            android:button="@drawable/check_style"
+                            android:checked="false"
+                            android:text="@string/car_check_zonghe_R"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/zonghe_e"
+                            android:layout_width="380dip"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="5dip"
+                            android:button="@drawable/check_style"
+                            android:checked="false"
+                            android:text="@string/car_check_zonghe_E"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+
+                    <TextView style="@style/splite_line" />
+
+                    <RadioGroup
+                        android:id="@+id/zonghe_group4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <RadioButton
+                            android:id="@+id/zonghe_m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="5dip"
+                            android:button="@drawable/check_style"
+                            android:checked="false"
+                            android:text="@string/car_check_zonghe_M"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            
+            
+            
+            
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/car_check_linearlayout"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:background="@drawable/common_titlebar" >
+
+                    <TextView
+                        style="@style/splite_line1"
+                        android:layout_marginTop="0.1dip" >
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/line"
+                        android:src="@drawable/title_bar_jiantou" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:text="车况描述"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <TextView style="@style/splite_line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                     >
+					<TextView 
+					    android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content"
+                    	android:textSize="16sp"
+					    android:text="外观描述"
+					    />
+                    <EditText 
+                        android:id="@+id/car_check_chekuangmiaoshu"
+                        android:gravity="top"
+                        android:layout_width="fill_parent"
+                    	android:layout_height="50dip"
+                        android:maxLength="200"
+                        android:hint="请输入外观的描述信息."
+                        />
+                    <TextView 
+					    android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content"
+                    	android:textSize="16sp"
+					    android:text="内饰描述"
+					    />
+                    <EditText 
+                        android:id="@+id/car_check_chekuangmiaoshu2"
+                        android:gravity="top"
+                        android:layout_width="fill_parent"
+                    	android:layout_height="50dip"
+                        android:maxLength="200"
+                        android:hint="请输入内饰的描述信息."
+                        />
+                    <TextView 
+					    android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content"
+                    	android:textSize="16sp"
+					    android:text="骨架描述"
+					    />
+                    <EditText 
+                        android:id="@+id/car_check_chekuangmiaoshu3"
+                        android:gravity="top"
+                        android:layout_width="fill_parent"
+                    	android:layout_height="50dip"
+                        android:maxLength="200"
+                        android:hint="请输入骨架的描述信息."
+                        />
+                    <TextView 
+					    android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content"
+                    	android:textSize="16sp"
+					    android:text="装置描述"
+					    />
+                    <EditText 
+                        android:id="@+id/car_check_chekuangmiaoshu4"
+                        android:gravity="top"
+                        android:layout_width="fill_parent"
+                    	android:layout_height="50dip"
+                        android:maxLength="200"
+                        android:hint="请输入装置的描述信息."
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

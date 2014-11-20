@@ -1,0 +1,1909 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+    <LinearLayout
+            android:id="@+id/task_title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <include layout="@layout/layout_title"/>
+
+        <include layout="@layout/layout_common_tab_title"/>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="#666666">
+
+            <Button
+                    android:id="@+id/check_task_preview2_btn_edit"
+                    android:layout_width="120dip"
+                    android:layout_height="50dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:background="@drawable/btn_style_2"
+                    android:text="修改任务"
+                    android:visibility="invisible"
+                    android:textColor="@color/white"
+                    android:textSize="16dip"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="检测报告查看"
+                    android:textColor="#ffffff"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="20sp"/>
+
+
+            <Button
+                    android:id="@+id/check_task_preview2_btn_back"
+                    android:layout_width="120dip"
+                    android:layout_height="50dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/btn_style_2"
+                    android:text="@string/back"
+                    android:textColor="@color/white"
+                    android:textSize="16dip"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/check_task1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/check_task1"
+            android:layout_below="@id/task_title_layout"
+            >
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/bg"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/car_check_linearlayout"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dip"
+                        android:background="@drawable/common_titlebar">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center"
+                            android:text="客户信息"
+                            android:textColor="#ff1f34"
+                            android:textSize="17sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/check_task_preview2_user_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:cacheColorHint="#00000000"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="客户姓名："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_user_name"
+                                android:layout_width="270dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:layout_width="130dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text="联系方式："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_user_mobile"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="任务来源："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_shangjilaiyuan"
+                                android:layout_width="270dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:layout_width="130dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text="客户意向："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_user_yixiang"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+
+                        <!--
+                      <TextView
+                                              android:layout_width="130dip"
+                                              android:layout_height="wrap_content"
+                                              android:layout_marginLeft="5dip"
+                                              android:gravity="center_vertical"
+                                              android:text="任务提供人："
+                                              android:textColor="#000000"
+                                              android:textSize="17sp" />
+                                          <TextView
+                                              android:id="@+id/check_task_preview2_user_xiaoshouguwen"
+                                              android:layout_width="wrap_content"
+                                              android:layout_weight="1"
+                                              android:layout_height="wrap_content"
+                                              android:layout_marginLeft="5dip"
+                                              android:gravity="center_vertical"
+                                              android:text=""
+                                              android:textColor="#000000"
+                                              android:textSize="17sp" />
+                                               -->
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- 任务登记信息 -->
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/car_check_linearlayout"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dip"
+                        android:background="@drawable/common_titlebar">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center"
+                            android:text="任务登记信息"
+                            android:textColor="#ff1f34"
+                            android:textSize="17sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/check_task_preview2_user_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:cacheColorHint="#00000000"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="提供区域："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly2_txt1"
+                                android:layout_width="270dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:layout_width="130dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text="提供门店："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly2_txt2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="提供部门："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly2_txt3"
+                                android:layout_width="270dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:layout_width="130dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text="提供人："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly2_txt4"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="分配时间："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly2_txt5"
+                                android:layout_width="270dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:layout_width="130dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text="检测区域："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly2_txt6"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="检测门店："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly2_txt7"
+                                android:layout_width="270dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:layout_width="130dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text="检测时间："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly2_txt8"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="检测人："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly2_txt9"
+                                android:layout_width="270dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:layout_width="130dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text="接收时间："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly2_txt10"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="开始时间："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly2_txt11"
+                                android:layout_width="270dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:layout_width="130dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text="完毕时间："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly2_txt12"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/car_check_linearlayout"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dip"
+                        android:background="@drawable/common_titlebar">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center"
+                            android:text="@string/info_preview_title2"
+                            android:textColor="#ff1f34"
+                            android:textSize="17sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/check_task_preview2_shouxu_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:cacheColorHint="#00000000"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="车牌号码："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly3_txt1"
+                                android:layout_width="270dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text="归属地："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly3_txt2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="车辆识别代码（VIN码）："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly3_txt3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="车辆类型："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly3_txt5"
+                                android:layout_width="270dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text="使用性质："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly3_txt4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="品牌型号："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly3_txt6"
+                                android:layout_width="270dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text="发动机号："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly3_txt7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="出厂日期："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly3_txt8"
+                                android:layout_width="270dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="首次注册登记日期："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly3_txt9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="强制报废年限："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly3_txt10"
+                                android:layout_width="250dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text="所有人："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly3_txt11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="排放标准："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly3_txt12"
+                                android:layout_width="270dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text="办证状态："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly3_txt13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="变更记录："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly3_txt14"
+                                android:layout_width="270dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text="购置税："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly3_txt15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="交强险有效期："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly3_txt16"
+                                android:layout_width="250dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text="年检有效期："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly3_txt17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="通行费有效期："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly3_txt18"
+                                android:layout_width="250dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text="违章未处理记录："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly3_txt19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="牌照额度："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly3_txt20"
+                                android:layout_width="270dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text="原厂钥匙："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly3_txt21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="随车工具："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly3_txt22"
+                                android:layout_width="270dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text="车辆使用说明书："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly3_txt23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="车辆保养手册："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly3_txt24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/car_check_linearlayout"
+                    android:orientation="vertical">
+
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dip"
+                        android:background="@drawable/common_titlebar">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center"
+                            android:text="@string/info_preview_title3"
+                            android:textColor="#ff1f34"
+                            android:textSize="17sp"/>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                        android:id="@+id/check_task_preview2_shouxu_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:cacheColorHint="#00000000"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="车型："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly4_txt1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="车辆类别："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly4_txt2"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="车身颜色："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly4_txt3"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="变速箱类型："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly4_txt4"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="排量："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly4_txt5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="发动机功率："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly4_txt6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="关键配置："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_carModel_keyConfiguration"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="选装配置："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_carModel_choiceConfiguration"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="改装配置："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_carModel_changeConfiguration"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="表显里程："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_carModel_distence"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="码表改动："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly4_txt7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                    </LinearLayout>
+
+                    <HorizontalScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+                        <include layout="@layout/check_task_img_layout"/>
+
+                    </HorizontalScrollView>
+
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            >
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="新车厂商指导价："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly4_txt12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="新车当地最低价："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly4_txt13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="二手车价格最低："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly4_txt14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="二手车价格最高："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                        <TextView
+                                android:id="@+id/check_task_preview2_ly4_txt15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/car_check_linearlayout"
+                    android:orientation="vertical">
+
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dip"
+                        android:background="@drawable/common_titlebar">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_centerVertical="true"
+                            android:text="@string/info_preview_title4"
+                            android:textColor="#ff1f34"
+                            android:textSize="17sp"/>
+
+
+                    <Button
+                            android:id="@+id/check_task_preview2_jingmi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dip"
+                            android:text="精密检测信息"
+                            android:textColor="@color/white"
+                            android:background="@drawable/search_bar_button"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                        android:id="@+id/check_task_preview2_zonghe_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:cacheColorHint="#00000000"
+                        android:orientation="vertical">
+
+
+                    <!-- 外观评星 -->
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top"
+                                android:layout_marginLeft="20dip"
+                                android:text="外观评星："
+                                android:textSize="17sp"
+                                android:gravity="top"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_waiguan_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text=" "
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                    </LinearLayout>
+
+
+                    <!-- 内饰评星 -->
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top"
+                                android:layout_marginLeft="20dip"
+                                android:text="内饰评星："
+                                android:textSize="17sp"
+                                android:gravity="top"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_neishi_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text=" "
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                    </LinearLayout>
+
+                    <!-- 事故评级 -->
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top"
+                                android:layout_marginLeft="20dip"
+                                android:text="事故评级："
+                                android:textSize="17sp"
+                                android:gravity="top"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_shigu_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text=" "
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                    </LinearLayout>
+
+                    <!-- 特殊车 -->
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top"
+                                android:layout_marginLeft="20dip"
+                                android:text="特殊车："
+                                android:textSize="17sp"
+                                android:gravity="top"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_teshu_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text=" "
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                    </LinearLayout>
+
+
+                    <!-- 综合评级 -->
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text="综合评级："
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_zonghe_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text=" "
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                    </LinearLayout>
+
+                    <!-- 车况描述 -->
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top"
+                                android:layout_marginLeft="20dip"
+                                android:text="车况描述："
+                                android:textSize="17sp"
+                                android:gravity="top"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_miaoshu_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text=" "
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                    </LinearLayout>
+
+                    <!-- 是否广汇认证车 -->
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top"
+                                android:layout_marginLeft="20dip"
+                                android:text="广汇认证车："
+                                android:textSize="17sp"
+                                android:gravity="top"/>
+
+                        <TextView
+                                android:id="@+id/check_task_preview2_guanghuirenzheng_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="20dip"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginBottom="10dip"
+                    android:background="@drawable/car_check_linearlayout"
+                    android:orientation="vertical">
+
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dip"
+                        android:background="@drawable/common_titlebar">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center"
+                            android:text="车辆收购信息"
+                            android:textColor="#ff1f34"
+                            android:textSize="17sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_marginTop="10dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:cacheColorHint="#00000000"
+                        android:orientation="horizontal">
+                    <TextView
+                            android:layout_width="135dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dip"
+                            android:gravity="center_vertical"
+                            android:text="车辆评估价："
+                            android:textColor="#000000"
+                            android:textSize="17sp"/>
+                    <TextView
+                            android:id="@+id/check_task_preview2_shougou_price"
+                            android:layout_width="270dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="17sp"/>
+                    <TextView
+                            android:layout_width="130dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:gravity="center_vertical"
+                            android:text="成交说明："
+                            android:textColor="#000000"
+                            android:textSize="17sp"/>
+                    <TextView
+                            android:id="@+id/check_task_preview2_shougou_chengjiao_info"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="17sp"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_marginTop="5dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:cacheColorHint="#00000000"
+                        android:orientation="horizontal">
+                    <TextView
+                            android:layout_width="135dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dip"
+                            android:gravity="center_vertical"
+                            android:text="任务结果："
+                            android:textColor="#000000"
+                            android:textSize="17sp"/>
+                    <TextView
+                            android:id="@+id/check_task_preview2_shougou_weichengjiao_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="5dip"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="17sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

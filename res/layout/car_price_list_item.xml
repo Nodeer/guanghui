@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"  
+    >
+
+    
+    
+    
+    <TextView
+        android:layout_alignParentTop="true"
+        android:id="@+id/car_price_list_item_txt5"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:text="10000000"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/red"
+        android:textSize="22dip"
+        />
+    
+    <TextView
+        android:layout_alignParentTop="true"
+        android:id="@+id/car_price_list_item_txt4"
+        android:layout_toLeftOf="@+id/car_price_list_item_txt5"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:text="最低价:"
+        android:textColor="@color/black"
+        android:textSize="22dip"
+        />
+    
+    
+    <TextView
+        android:layout_alignParentTop="true"
+        android:id="@+id/car_price_list_item_txt3"
+        android:layout_toLeftOf="@+id/car_price_list_item_txt4"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:text="10000000"
+        android:textColor="@color/red"
+        android:textSize="22dip"
+        />
+    
+    <TextView
+        android:id="@+id/car_price_list_item_txt2"
+        android:layout_toLeftOf="@+id/car_price_list_item_txt3"
+        android:layout_width="100dip"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:text="指导价:"
+        android:textColor="@color/black"
+        android:textSize="22dip"
+        />
+    
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="30dip"
+        android:id="@+id/car_price_list_item_txt1"
+        android:layout_toLeftOf="@+id/car_price_list_item_txt2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="xxxxxxxxxxxxxx"
+        android:textColor="@color/configuration_orange"
+        android:textSize="22dip"
+        />
+</RelativeLayout>
+    

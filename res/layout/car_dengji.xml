@@ -1,0 +1,1996 @@
+<!-- 手续登记的布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="#000000"   
+    
+    android:focusable="true"  
+    android:focusableInTouchMode="true"
+    
+    android:orientation="vertical"
+    >
+    
+     <!-- 系统标题 -->
+
+     <include
+         layout="@layout/layout_title" />
+    
+     <!-- 分页 -->
+
+    <include layout="@layout/layout_common_tab_title"/>
+     <!-- 二级标题 -->
+
+    <include layout="@layout/title_renwu" />
+    
+    
+        <ScrollView 
+	    	    android:layout_width="fill_parent"
+                android:layout_height="fill_parent" 
+                android:fadeScrollbars="false" 
+	    	    >
+    	
+    <!-- 内容信息 -->
+
+        
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/bg"
+        android:layout_marginLeft="5dip"
+    	android:layout_marginRight="5dip"
+    	android:orientation="vertical"
+        >
+        
+            <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:visibility="visible"
+        >
+            
+            <!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />   
+        
+            <LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="45dip"
+    			android:gravity="center_vertical"
+                >            
+            
+        	<TextView
+        	    android:layout_width="130dip"
+    			android:layout_height="wrap_content"
+    			android:text="VIN码"
+    			android:textSize="20dip"
+    			android:gravity="right"
+    			android:layout_marginRight="5dip"
+        	    />
+
+            <EditText
+                android:id="@+id/edt_vin"
+                android:layout_width="300dip"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:singleLine="true" />
+            
+            <Button
+                android:id="@+id/btn_jiexi1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:background="@drawable/btn_jiexi" />
+            
+            </LinearLayout>
+       
+            <!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />   
+        
+            <LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="45dip"
+    			android:gravity="center_vertical"
+                >            
+            
+        	<TextView
+        	    android:layout_width="130dip"
+    			android:layout_height="wrap_content"
+    			android:text="车辆类型"
+    			android:gravity="right"
+    			android:textSize="20dip"
+    			android:layout_marginRight="5dip"
+        	    />
+
+           <Spinner
+               android:id="@+id/spineer_car_leixing"
+               style="@style/spinner_style"
+               android:layout_width="200dip"
+               android:layout_height="40dip"
+               android:layout_gravity="center_vertical"
+               android:gravity="center" >
+
+            </Spinner>
+            
+            
+            </LinearLayout>
+            
+            
+            <!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />   
+        
+            <LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="45dip"
+    			android:gravity="center_vertical"
+                >            
+            
+        	<TextView
+        	    android:layout_width="130dip"
+    			android:layout_height="wrap_content"
+    			android:text="车型"
+    			android:gravity="right"
+    			android:textSize="20dip"
+    			android:layout_marginRight="5dip"
+        	    />
+
+           <Spinner
+               android:id="@+id/spineer_car_chexing1"
+               style="@style/spinner_style"
+               android:layout_width="300dip"
+               android:layout_height="40dip"
+               android:layout_gravity="center_vertical"
+               android:layout_marginRight="10dip"
+               android:gravity="center" >
+
+            </Spinner>
+            
+            <Spinner
+                android:id="@+id/spineer_car_chexing2"
+                style="@style/spinner_style"
+                android:layout_width="220dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:gravity="center" >
+
+            </Spinner>
+            
+            
+            
+            <Button
+                android:id="@+id/shuaxin_car_chexing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:background="@drawable/btn_refresh" />
+            
+            </LinearLayout>
+            
+            
+            <!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />   
+        
+            <LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="45dip"
+    			android:gravity="center_vertical"
+                >            
+            
+        	<TextView
+        	    android:layout_width="130dip"
+    			android:layout_height="wrap_content"    			
+    			android:textSize="20dip"
+    			android:layout_marginRight="5dip"
+        	    />
+
+           <Spinner
+               android:id="@+id/spineer_car_chexing3"
+               style="@style/spinner_style"
+               android:layout_width="300dip"
+               android:layout_height="40dip"
+               android:layout_gravity="center_vertical"
+               android:layout_marginRight="10dip"
+               android:gravity="center" >
+
+            </Spinner>
+            
+            <Spinner
+                android:id="@+id/spineer_car_chexing4"
+                style="@style/spinner_style"
+                android:layout_width="220dip"
+               android:layout_height="40dip"
+               android:layout_gravity="center_vertical"
+               android:layout_marginRight="10dip"
+               android:gravity="center" >
+
+            </Spinner>
+            
+            
+            </LinearLayout>
+            
+             <!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />  
+	           <LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="45dip"
+    			android:gravity="center_vertical"
+                >            
+            
+	    	<TextView
+        	    android:layout_width="130dip"
+    			android:layout_height="wrap_content"    			
+    			android:textSize="20dip"
+    			android:layout_marginRight="5dip"
+        	    />
+            
+            
+            <Spinner
+                android:id="@+id/spineer_car_chexing5"
+                style="@style/spinner_style"
+                android:layout_width="450dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:gravity="center" >
+
+            </Spinner>
+            </LinearLayout>
+             <!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />  
+            <LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="45dip"
+    			android:gravity="center_vertical"
+                >            
+            
+        	<CheckBox
+        	    android:id="@+id/checkbox_other"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:layout_marginLeft="52dip"
+        	    android:layout_marginRight="5dip"
+        	    android:text="其他"
+        	    android:textSize="20dip" />
+
+           <Spinner
+               android:id="@+id/spineer_other1"
+               style="@style/spinner_style"
+               android:layout_width="200dip"
+               android:layout_height="40dip"
+               android:layout_gravity="center_vertical"
+               android:layout_marginRight="10dip"
+               android:gravity="center" >
+
+            </Spinner>
+            
+            <EditText
+                android:id="@+id/spineer_other2"
+                android:hint="请输入具体车型"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                >
+
+            </EditText>
+            
+            <Spinner
+                android:id="@+id/spineer_other3"
+                style="@style/spinner_style"
+                android:layout_width="200dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:gravity="center" >
+
+            </Spinner>
+            
+            </LinearLayout>
+            
+            <LinearLayout                
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+            
+           <Spinner
+               android:id="@+id/spineer_other4"
+               style="@style/spinner_style"
+               android:layout_width="200dip"
+               android:layout_height="40dip"
+               android:layout_gravity="center_vertical"
+               android:layout_marginLeft="135dip"
+               android:layout_marginRight="10dip"
+               android:gravity="center" >
+
+            </Spinner>
+            
+            <Spinner
+                android:id="@+id/spineer_other5"
+                style="@style/spinner_style"
+                android:layout_width="200dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:gravity="center" >
+
+            </Spinner>
+            
+            <Spinner
+                android:id="@+id/spineer_other6"
+                style="@style/spinner_style"
+                android:layout_width="200dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:gravity="center" >
+
+            </Spinner>
+            
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_marginTop="3dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+            
+           <Spinner
+               android:id="@+id/spineer_other7"
+               style="@style/spinner_style"
+               android:layout_width="200dip"
+               android:layout_height="40dip"
+               android:layout_gravity="center_vertical"
+               android:layout_marginLeft="135dip"
+               android:layout_marginRight="10dip"
+               android:gravity="center" >
+
+            </Spinner>
+            
+            <Spinner
+                android:id="@+id/spineer_other8"
+                style="@style/spinner_style"
+                android:layout_width="200dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:gravity="center" >
+
+            </Spinner>
+            
+            <Spinner
+                android:id="@+id/spineer_other9"
+                style="@style/spinner_style"
+                android:layout_width="200dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:gravity="center" >
+
+            </Spinner>
+            
+            </LinearLayout>
+            
+            
+             <!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />   
+        
+            <LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="45dip"
+    			android:gravity="center_vertical"
+                >            
+            
+        	<TextView
+        	    android:layout_width="130dip"
+    			android:layout_height="wrap_content"
+    			android:text="变速箱类型"
+    			android:gravity="right"
+    			android:textSize="20dip"
+    			android:layout_marginRight="5dip"
+        	    />
+
+           <Spinner
+               android:id="@+id/spineer_car_biansuxiang"
+               style="@style/spinner_style"
+               android:layout_width="200dip"
+               android:layout_height="40dip"
+               android:layout_gravity="center_vertical"
+               android:gravity="center" >
+
+            </Spinner>
+            
+           
+           <TextView
+               android:id="@+id/txt_car_biansuxiang_tip"
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:textSize="20dip"
+    			android:textColor="#666666"
+    			android:layout_marginLeft="5dip"
+        	    />
+           
+            
+            </LinearLayout>
+            
+            
+             <!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />   
+        
+            <LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="45dip"
+    			android:gravity="center_vertical"
+                >            
+            
+        	<TextView
+        	    android:layout_width="130dip"
+    			android:layout_height="wrap_content"
+    			android:text="排量"
+    			android:gravity="right"
+    			android:textSize="20dip"
+    			android:layout_marginRight="5dip"
+        	    />
+
+            <EditText
+                android:id="@+id/edt_pailiang"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+            
+            <TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="L"
+    			android:gravity="right"
+    			android:textSize="20dip"
+    			android:layout_marginLeft="5dip"
+        	    />
+            
+            </LinearLayout>
+            
+             <!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />   
+        
+            <LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="45dip"
+    			android:gravity="center_vertical"
+                >            
+            
+        	<TextView
+        	    android:layout_width="130dip"
+    			android:layout_height="wrap_content"
+    			android:text="发动机功率"
+    			android:gravity="right"
+    			android:textSize="20dip"
+    			android:layout_marginRight="5dip"
+        	    />
+
+            <EditText
+                android:id="@+id/edt_gonglv"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:inputType="text|number"
+                android:singleLine="true" />
+            
+             <TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="KW"
+    			android:gravity="right"
+    			android:textSize="20dip"
+    			android:layout_marginLeft="5dip"
+        	    />
+             
+            </LinearLayout>
+            
+             <!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />
+            
+             <!-- 分割线 -->
+            
+            <RelativeLayout
+        		android:layout_marginTop="5dip"
+        		android:layout_marginLeft="0dip"
+        		android:layout_marginRight="0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                android:background="@drawable/common_titlebar"
+                >
+				<ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/line"
+                            android:src="@drawable/title_bar_jiantou" />
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                    
+                    android:layout_centerVertical="true"
+                    android:text="配置信息"
+                    android:textColor="#000000"
+                     android:layout_marginLeft="15dp"
+                    android:textSize="16sp" />                
+                                
+            </RelativeLayout>
+	        
+            </LinearLayout>
+            
+            
+            <!-- 关键配置 -->
+	    	
+	    	    <LinearLayout 
+	    	    android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+	    	        >
+	    	   <!-- 燃料类型 -->
+	    	    <LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:gravity="top"    			
+                >        	    	
+        	<TextView        	    
+        	    android:layout_width="140dip"
+    			android:layout_height="wrap_content"
+    			android:text="1.燃料类型"
+    			android:gravity="right"
+    			android:textSize="18dip"
+    			android:layout_marginTop="10dip"
+        	    />
+			<TextView
+			    android:layout_marginTop="10dip"
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textSize="18dip"
+    			android:textColor="@color/red"    			
+    			android:layout_marginRight="5dip"
+        	    />
+        
+           <com.guanghui.car.ui.FlowRadioGroup            
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"  
+	         android:orientation="horizontal">
+               
+               <RadioButton
+                   android:id="@+id/radio_ranliao1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:checked="true"
+                   android:text="汽油" />
+
+               <RadioButton
+                   android:id="@+id/radio_ranliao2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="柴油" />
+
+               <RadioButton
+                   android:id="@+id/radio_ranliao3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="液化气" />
+
+               <RadioButton
+                   android:id="@+id/radio_ranliao4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="天然气" />
+
+               <RadioButton
+                   android:id="@+id/radio_ranliao5"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="纯电动" />
+
+               <RadioButton
+                   android:id="@+id/radio_ranliao6"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="油电混合" />
+
+               <RadioButton
+                   android:id="@+id/radio_ranliao7"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="油气混合" />
+
+           </com.guanghui.car.ui.FlowRadioGroup>
+            
+          
+            </LinearLayout>
+	    	
+	    	<!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />
+            
+	    	        
+	    	<!-- 钥匙 -->
+	    	    <LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="50dip"
+    			android:gravity="center_vertical"
+                >            
+            
+        	<TextView
+        	    android:layout_width="140dip"
+    			android:layout_height="wrap_content"
+    			android:text="2.钥匙"
+    			android:gravity="right"
+    			android:textSize="18dip"
+        	    />
+		<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textSize="18dip"
+    			android:textColor="@color/red"    			
+    			android:layout_marginRight="5dip"
+        	    />
+           <RadioGroup               
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"  
+	         android:orientation="horizontal">
+               
+               <RadioButton
+                   android:id="@+id/radio_yaoshi1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:checked="true"
+                   android:text="普通" />
+
+               <RadioButton
+                   android:id="@+id/radio_yaoshi2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="遥控" />
+
+               <RadioButton
+                   android:id="@+id/radio_yaoshi3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="智能" />
+               
+           </RadioGroup>
+            
+          
+            </LinearLayout>
+	    	
+	    	<!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />
+	    	        
+	    	
+	    	<!-- ABS -->
+	    	    <LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="50dip"
+    			android:gravity="center_vertical"
+                >            
+            
+        	<TextView
+        	    android:layout_width="140dip"
+    			android:layout_height="wrap_content"
+    			android:text="3.ABS"
+    			android:gravity="right"
+    			android:textSize="18dip"
+        	    />
+<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textSize="18dip"
+    			android:textColor="@color/red"    			
+    			android:layout_marginRight="5dip"
+        	    />
+           <RadioGroup               
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"  
+	         android:orientation="horizontal">
+               
+               <RadioButton
+                   android:id="@+id/radio_abs1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:checked="true"
+                   android:text="有" />
+
+               <RadioButton
+                   android:id="@+id/radio_abs2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="无" />
+                       
+           </RadioGroup>
+            
+          
+            </LinearLayout>
+	    	
+	    	<!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />
+	    	
+	    	
+	    	<!-- 助力转向 -->
+	    	    <LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="50dip"
+    			android:gravity="center_vertical"
+                >            
+            
+        	<TextView
+        	    android:layout_width="140dip"
+    			android:layout_height="wrap_content"
+    			android:text="4.助力转向"
+    			android:gravity="right"
+    			android:textSize="18dip"
+        	    />
+        	<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textSize="18dip"
+    			android:textColor="@color/red"    			
+    			android:layout_marginRight="5dip"
+        	    />
+
+           <RadioGroup               
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"  
+	         android:orientation="horizontal">
+               
+               <RadioButton
+                   android:id="@+id/radio_zhuli1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:checked="true"
+                   android:text="有" />
+
+               <RadioButton
+                   android:id="@+id/radio_zhuli2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="无" />
+                       
+           </RadioGroup>
+            
+          
+            </LinearLayout>
+	    	
+	    	<!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />
+	    	
+	    	
+	    	
+	    	<!-- 轮圈 -->
+	    	    <LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="50dip"
+    			android:gravity="center_vertical"
+                >            
+            
+        	<TextView
+        	    android:layout_width="140dip"
+    			android:layout_height="wrap_content"
+    			android:text="5.轮圈"
+    			android:gravity="right"
+    			android:textSize="18dip"
+        	    />
+        	<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textSize="18dip"
+    			android:textColor="@color/red"    			
+    			android:layout_marginRight="5dip"
+        	    />
+
+           <RadioGroup               
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"  
+	         android:orientation="horizontal">
+               
+               <RadioButton
+                   android:id="@+id/radio_lunquan1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:checked="true"
+                   android:text="钢" />
+
+               <RadioButton
+                   android:id="@+id/radio_lunquan2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="合金 " />
+   
+                <RadioButton
+                    android:id="@+id/radio_lunquan3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="碳纤维" />
+                     
+           </RadioGroup>
+            
+          
+            </LinearLayout>
+	    	
+	    	<!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />
+	    	
+	    	<!-- 安全气囊/汽帘 -->
+	    	    <LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			
+                >            
+            
+        	<TextView
+        	    android:layout_marginTop="10dip"
+        	    android:layout_width="140dip"
+    			android:layout_height="wrap_content"
+    			android:text="6.安全气囊/汽帘"
+    			android:gravity="right"
+    			android:textSize="18dip"
+        	    />
+<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textSize="18dip"
+    			android:textColor="@color/red"    			
+    			android:layout_marginRight="5dip"
+        	    />
+        	<LinearLayout 
+        	    android:layout_width="fill_parent"
+	         	android:layout_height="wrap_content"  
+        	    android:orientation="vertical"
+        	    >
+        	
+           <RadioGroup               
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"  
+	         android:orientation="horizontal">               
+
+               <RadioButton
+                   android:id="@+id/radio_qinang1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:checked="true"
+                   android:text="无" />
+
+               <RadioButton
+                   android:id="@+id/radio_qinang2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="有" />
+
+           </RadioGroup>           
+           
+           <!-- 选框 -->
+           <LinearLayout 
+               android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+               >
+
+           <CheckBox
+               android:id="@+id/check_qinang1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="驾驶员气囊" />
+
+           <CheckBox
+               android:id="@+id/check_qinang2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="副驾驶气囊" />
+
+           <CheckBox
+               android:id="@+id/check_qinang3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="前排侧气囊" />
+
+           <CheckBox
+               android:id="@+id/check_qinang4"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="后排侧气囊" />
+
+           </LinearLayout>
+           <LinearLayout 
+               android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+               >
+
+           <CheckBox
+               android:id="@+id/check_qinang5"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="前排头部气囊/汽帘" />
+
+           <CheckBox
+               android:id="@+id/check_qinang6"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="后排头部气囊/汽帘" />
+
+           <CheckBox
+               android:id="@+id/check_qinang7"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="膝部气囊" />
+
+           </LinearLayout>
+            </LinearLayout>
+          
+            </LinearLayout>
+	    	
+	    	<!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />
+	    	
+	    	
+	    	 <!-- 天窗 -->
+	    	    <LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="50dip"
+    			android:gravity="center_vertical"
+                >            
+            
+        	<TextView
+        	    android:layout_width="140dip"
+    			android:layout_height="wrap_content"
+    			android:text="7.天窗"
+    			android:gravity="right"
+    			android:textSize="18dip"
+        	    />
+<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textSize="18dip"
+    			android:textColor="@color/red"    			
+    			android:layout_marginRight="5dip"
+        	    />
+           <RadioGroup               
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"  
+	         android:orientation="horizontal">
+               
+               <RadioButton
+                   android:id="@+id/radio_tianchuang1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:checked="true"
+                   android:text="无" />
+
+               <RadioButton
+                   android:id="@+id/radio_tianchuang2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="手动" />
+
+               <RadioButton
+                   android:id="@+id/radio_tianchuang3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="电动" />
+
+               <RadioButton
+                   android:id="@+id/radio_tianchuang4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="全景" />
+               
+           </RadioGroup>
+            
+          
+            </LinearLayout>
+	    	<!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />
+	    	
+	    	
+	    	<!-- 空调 -->
+	    	    <LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+                >            
+            
+        	<TextView
+        	    android:layout_marginTop="10dip"
+        	    android:layout_width="140dip"
+    			android:layout_height="wrap_content"
+    			android:text="8.空调"
+    			android:gravity="right"
+    			android:textSize="18dip"
+        	    />
+<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textSize="18dip"
+    			android:textColor="@color/red"    			
+    			android:layout_marginRight="5dip"
+        	    />
+        	<LinearLayout 
+        	    android:layout_width="fill_parent"
+	         	android:layout_height="wrap_content"  
+        	    android:orientation="vertical"
+        	    >
+        	
+           <RadioGroup               
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"  
+	         android:orientation="horizontal">               
+
+               <RadioButton
+                   android:id="@+id/radio_kongtiao1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:checked="true"
+                   android:text="无" />
+
+               <RadioButton
+                   android:id="@+id/radio_kongtiao2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="有" />
+
+           </RadioGroup>           
+           
+           <!-- 选框 -->
+           <LinearLayout 
+               android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+               >
+           <CheckBox 
+               android:id="@+id/check_kongtiao1"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="手动控制"
+               />
+           <CheckBox 
+                android:id="@+id/check_kongtiao2"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="自动控制"
+               />
+           <CheckBox 
+                android:id="@+id/check_kongtiao3"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="后排独立空调"
+               />
+           </LinearLayout>
+            </LinearLayout>
+          
+            </LinearLayout>
+	    	<!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />
+	    	
+	    	
+	    	 <!-- 门窗 -->
+	    	    <LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="50dip"
+    			android:gravity="center_vertical"
+                >            
+            
+        	<TextView
+        	    android:layout_width="140dip"
+    			android:layout_height="wrap_content"
+    			android:text="9.门窗"
+    			android:gravity="right"
+    			android:textSize="18dip"
+        	    />
+<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textSize="18dip"
+    			android:textColor="@color/red"    			
+    			android:layout_marginRight="5dip"
+        	    />
+           <RadioGroup               
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"  
+	         android:orientation="horizontal">
+               
+               <RadioButton 
+                   android:id="@+id/radio_menchuang1"
+                   android:layout_width="wrap_content"
+	         	   android:layout_height="wrap_content"
+                   android:checked="true" 
+                   android:text="手动"                   
+                   />
+               <RadioButton 
+                   android:id="@+id/radio_menchuang2"
+                   android:layout_width="wrap_content"
+	         	   android:layout_height="wrap_content"    
+                   android:text="前门电动"
+                   />
+               <RadioButton 
+                   android:id="@+id/radio_menchuang3"
+                   android:layout_width="wrap_content"
+	         	   android:layout_height="wrap_content"    
+                   android:text="四门电动"
+                   />                      
+           </RadioGroup>            
+          
+            </LinearLayout>
+	    	<!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />
+	    	
+	    	
+	    	 <!-- 后视镜 -->
+	    	    <LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="50dip"
+    			android:gravity="center_vertical"
+                >            
+            
+        	<TextView
+        	    android:layout_width="140dip"
+    			android:layout_height="wrap_content"
+    			android:text="10.后视镜"
+    			android:gravity="right"
+    			android:textSize="18dip"
+        	    />
+<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textSize="18dip"
+    			android:textColor="@color/red"    			
+    			android:layout_marginRight="5dip"
+        	    />
+           <RadioGroup               
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"  
+	         android:orientation="horizontal">
+               
+               <RadioButton 
+                   android:id="@+id/radio_houshijing1"
+                   android:layout_width="wrap_content"
+	         	   android:layout_height="wrap_content"
+                   android:checked="true"
+                   android:text="手动调节"                   
+                   />
+               <RadioButton 
+                   android:id="@+id/radio_houshijing2"
+                   android:layout_width="wrap_content"
+	         	   android:layout_height="wrap_content"    
+                   android:text="电动调节"
+                   />
+               <RadioButton 
+                   android:id="@+id/radio_houshijing3"
+                   android:layout_width="wrap_content"
+	         	   android:layout_height="wrap_content"    
+                   android:text="电动折叠"
+                   />  
+               <RadioButton 
+                   android:id="@+id/radio_houshijing4"
+                   android:layout_width="wrap_content"
+	         	   android:layout_height="wrap_content"    
+                   android:text="电动记忆"
+                   />                    
+           </RadioGroup>            
+          
+            </LinearLayout>
+	    	<!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />
+	    	
+	    	
+	    	<!-- 座椅材质 -->
+	    	    <LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="50dip"
+    			android:gravity="center_vertical"
+                >            
+            
+        	<TextView
+        	    android:layout_width="140dip"
+    			android:layout_height="wrap_content"
+    			android:text="11.座椅材质"
+    			android:gravity="right"
+    			android:textSize="18dip"
+        	    />
+<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textSize="18dip"
+    			android:textColor="@color/red"    			
+    			android:layout_marginRight="5dip"
+        	    />
+           <RadioGroup               
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"  
+	         android:orientation="horizontal">
+               
+               <RadioButton 
+                   android:id="@+id/radio_zuoyi_caizhi1"
+                   android:layout_width="wrap_content"
+	         	   android:layout_height="wrap_content"    
+                   android:text="织物"         
+                   android:checked="true"          
+                   />
+               <RadioButton 
+                   android:id="@+id/radio_zuoyi_caizhi2"
+                   android:layout_width="wrap_content"
+	         	   android:layout_height="wrap_content"    
+                   android:text="真皮"
+                   />        
+           </RadioGroup>            
+          
+            </LinearLayout>
+	    	<!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />
+	    	
+	    	<!-- 座椅功能 -->
+	    	    <LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:gravity="center_vertical"
+                >            
+            
+        	<TextView
+        	    android:layout_width="140dip"
+    			android:layout_height="wrap_content"
+    			android:text="12.座椅功能"
+    			android:gravity="right"
+    			android:textSize="18dip"
+    			android:layout_marginRight="5dip"
+        	    />
+
+        	<LinearLayout 
+               android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:orientation="vertical"
+               >
+               
+            <LinearLayout 
+               android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+               >
+           <CheckBox 
+               android:id="@+id/check_zuoyi1"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="主驾座椅电动调节"
+               />
+           <CheckBox 
+               android:id="@+id/check_zuoyi2"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="副驾座椅电动调节"
+               />
+           <CheckBox 
+               android:id="@+id/check_zuoyi3"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="后排座椅电动调节"
+               />
+          
+           </LinearLayout>
+          
+            <LinearLayout 
+               android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+               >
+            <CheckBox 
+               android:id="@+id/check_zuoyi4"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="电动座椅记忆"
+               />
+           <CheckBox 
+               android:id="@+id/check_zuoyi5"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="前排座椅加热"
+               />
+           <CheckBox 
+               android:id="@+id/check_zuoyi6"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="后排座椅加热"
+               />
+          
+           </LinearLayout>
+           
+            <LinearLayout 
+               android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+               >
+            <CheckBox 
+               android:id="@+id/check_zuoyi7"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="前排座椅通风"
+               />
+           <CheckBox 
+               android:id="@+id/check_zuoyi8"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="后排座椅通风"
+               />
+           <CheckBox 
+               android:id="@+id/check_zuoyi9"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="前排座椅按摩"
+               />
+         
+           </LinearLayout>
+            
+              <LinearLayout 
+               android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+               >
+             <CheckBox 
+               android:id="@+id/check_zuoyi10"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="后排座椅按摩"
+               />
+                  
+                  
+                   </LinearLayout>
+                  
+            </LinearLayout>
+            </LinearLayout>
+	    	<!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />
+	    	
+	    	
+	    	<!-- 方向盘 -->
+	    	<LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+                >            
+            
+        	<TextView
+        	    android:layout_marginTop="10dip"
+        	    android:layout_width="140dip"
+    			android:layout_height="wrap_content"
+    			android:text="13.方向盘"
+    			android:gravity="right"
+    			android:textSize="18dip"
+        	    />
+<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textSize="18dip"
+    			android:textColor="@color/red"    			
+    			android:layout_marginRight="5dip"
+        	    />
+        	<LinearLayout 
+        	    android:layout_width="fill_parent"
+	         	android:layout_height="wrap_content"  
+        	    android:orientation="vertical"
+        	    >
+        	
+           <RadioGroup               
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"  
+	         android:orientation="horizontal">               
+               <RadioButton                   
+                   android:id="@+id/radio_fangxiangpan1"
+                   android:layout_width="wrap_content"
+	         	   android:layout_height="wrap_content"    
+                   android:text="普通"        
+                   android:checked="true"           
+                   />
+               <RadioButton 
+                   android:id="@+id/radio_fangxiangpan2"
+                   android:layout_width="wrap_content"
+	         	   android:layout_height="wrap_content"    
+                   android:text="多功能"
+                   />
+           </RadioGroup>           
+           
+           <!-- 选框 -->
+           <LinearLayout 
+               android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+               >
+           <CheckBox 
+               android:id="@+id/check_fangxiangpan1"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="音响控制"
+               />
+           <CheckBox 
+               android:id="@+id/check_fangxiangpan2"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="定速巡航"
+               />
+           <CheckBox 
+               android:id="@+id/check_fangxiangpan3"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="方向盘换挡"
+               />
+            <CheckBox 
+                android:id="@+id/check_fangxiangpan4"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="方向盘电动调节"
+               />
+            
+           </LinearLayout>
+           
+           <LinearLayout 
+               android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+               > 
+           <CheckBox 
+                android:id="@+id/check_fangxiangpan5"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="方向盘加热"
+               />
+            </LinearLayout>
+            
+           
+            </LinearLayout>          
+            </LinearLayout>
+	    	<!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />
+	    	
+	    	<!-- 大灯 -->
+	    	    <LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="50dip"
+    			android:gravity="center_vertical"
+                >            
+            
+        	<TextView
+        	    android:layout_width="140dip"
+    			android:layout_height="wrap_content"
+    			android:text="14.大灯"
+    			android:gravity="right"
+    			android:textSize="18dip"
+        	    />
+<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textSize="18dip"
+    			android:textColor="@color/red"    			
+    			android:layout_marginRight="5dip"
+        	    />
+           <RadioGroup               
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"  
+	         android:orientation="horizontal">
+               
+               <RadioButton 
+                   android:id="@+id/radio_dadeng1"
+                   android:layout_width="wrap_content"
+	         	   android:layout_height="wrap_content"    
+                   android:text="卤素"    
+                   android:checked="true"               
+                   />
+               <RadioButton 
+                   android:id="@+id/radio_dadeng2"
+                   android:layout_width="wrap_content"
+	         	   android:layout_height="wrap_content"    
+                   android:text="其他"                   
+                   />        
+           </RadioGroup>            
+          
+            </LinearLayout>
+	    	<!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />
+	    	
+	    	<!-- CD/DVD -->
+	    	    <LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="50dip"
+    			android:gravity="center_vertical"
+                >            
+            
+        	<TextView
+        	    android:layout_width="140dip"
+    			android:layout_height="wrap_content"
+    			android:text="15.CD/DVD"
+    			android:gravity="right"
+    			android:textSize="18dip"
+        	    />
+<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textSize="18dip"
+    			android:textColor="@color/red"    			
+    			android:layout_marginRight="5dip"
+        	    />
+           <RadioGroup               
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"  
+	         android:orientation="horizontal">
+               
+               <RadioButton 
+                   android:id="@+id/radio_dvd1"
+                   android:layout_width="wrap_content"
+	         	   android:layout_height="wrap_content"    
+                   android:text="无"                   
+                   android:checked="true"
+                   />
+               <RadioButton 
+                   android:id="@+id/radio_dvd2"
+                   android:layout_width="wrap_content"
+	         	   android:layout_height="wrap_content"    
+                   android:text="单碟CD"
+                   /> 
+               <RadioButton 
+                   android:id="@+id/radio_dvd3"
+                   android:layout_width="wrap_content"
+	         	   android:layout_height="wrap_content"    
+                   android:text="多碟CD"
+                   />    
+               <RadioButton 
+                   android:id="@+id/radio_dvd4"
+                   android:layout_width="wrap_content"
+	         	   android:layout_height="wrap_content"    
+                   android:text="单碟DVD"
+                   /> 
+               <RadioButton 
+                   android:id="@+id/radio_dvd5"
+                   android:layout_width="wrap_content"
+	         	   android:layout_height="wrap_content"    
+                   android:text="多碟DVD"
+                   />         
+           </RadioGroup>            
+          
+            </LinearLayout>
+	    	<!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />
+	    	<!-- 液晶屏 -->
+	    	<LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+                >            
+            
+        	<TextView
+        	    android:layout_marginTop="10dip"
+        	    android:layout_width="140dip"
+    			android:layout_height="wrap_content"
+    			android:text="16.液晶屏"
+    			android:gravity="right"
+    			android:textSize="18dip"
+        	    />
+<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textSize="18dip"
+    			android:textColor="@color/red"    			
+    			android:layout_marginRight="5dip"
+        	    />
+        	<LinearLayout 
+        	    android:layout_width="fill_parent"
+	         	android:layout_height="wrap_content"  
+        	    android:orientation="vertical"
+        	    >
+        	
+           <RadioGroup               
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"  
+	         android:orientation="horizontal">               
+               <RadioButton 
+                   android:id="@+id/radio_yejingpin1"
+                   android:layout_width="wrap_content"
+	         	   android:layout_height="wrap_content"    
+                   android:text="无"       
+                   android:checked="true"            
+                   />
+               <RadioButton 
+                   android:id="@+id/radio_yejingpin2"
+                   android:layout_width="wrap_content"
+	         	   android:layout_height="wrap_content"    
+                   android:text="有"
+                   />
+           </RadioGroup>           
+           
+           <!-- 选框 -->
+           <LinearLayout 
+               android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+               >
+           <CheckBox 
+               android:id="@+id/check_yejingpin1"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="中控台液晶屏"
+               />
+           <CheckBox 
+               android:id="@+id/check_yejingpin2"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="后排液晶屏"
+               />
+           <CheckBox 
+               android:id="@+id/check_yejingpin3"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="导航"
+               />
+            <CheckBox 
+                android:id="@+id/check_yejingpin4"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="人机交互系统"
+               />
+           </LinearLayout>
+            </LinearLayout>          
+            </LinearLayout>
+	    	
+	    	<!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />
+	    	
+	    	
+	    	<!-- 其他配置 -->
+	    	<LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:gravity="center_vertical"
+                >            
+            
+        	<TextView
+        	    android:layout_width="140dip"
+    			android:layout_height="wrap_content"
+    			android:text="17.其他配置"
+    			android:gravity="right"
+    			android:textSize="18dip"
+        	    />
+<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textSize="18dip"
+    			android:textColor="@color/red"    			
+    			android:layout_marginRight="5dip"
+        	    />
+        	<LinearLayout 
+               android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:orientation="vertical"
+               >
+            
+        	
+        	<RadioGroup               
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"  
+	         android:orientation="horizontal">               
+               <RadioButton 
+                   android:id="@+id/radio_other_peizhi1"
+                   android:layout_width="wrap_content"
+	         	   android:layout_height="wrap_content"    
+                   android:text="无" 
+                   android:checked="true"             
+                   />
+               <RadioButton 
+                   android:id="@+id/radio_other_peizhi2"
+                   android:layout_width="wrap_content"
+	         	   android:layout_height="wrap_content"    
+                   android:text="有"
+                   />
+           </RadioGroup>
+        	    
+        	    
+        	    
+        	    
+        	    
+        	<LinearLayout 
+               android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+               >
+           <CheckBox 
+               android:id="@+id/check_other_peizhi1"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="胎压检测器"
+               />
+           <CheckBox 
+               android:id="@+id/check_other_peizhi2"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="车身稳定控制"
+               />
+           <CheckBox 
+               android:id="@+id/check_other_peizhi3"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="电动驻车"
+               />
+           <CheckBox 
+               android:id="@+id/check_other_peizhi4"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="陡坡缓降"
+               />
+           </LinearLayout>
+        	    
+        	    
+        	<LinearLayout 
+               android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+               >
+           <CheckBox 
+               android:id="@+id/check_other_peizhi5"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="底盘升降"
+               />
+           <CheckBox 
+               android:id="@+id/check_other_peizhi6"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="电动吸合门"
+               />
+           <CheckBox 
+               android:id="@+id/check_other_peizhi7"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="电动侧滑门"
+               />
+           <CheckBox 
+               android:id="@+id/check_other_peizhi8"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="电动后备箱"
+               />
+           </LinearLayout>
+           
+            <LinearLayout 
+               android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+               >
+           <CheckBox 
+               android:id="@+id/check_other_peizhi9"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="倒车影像"
+               />
+           <CheckBox 
+               android:id="@+id/check_other_peizhi10"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="抬头数字显示"
+               />
+           <CheckBox 
+               android:id="@+id/check_other_peizhi11"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="定位互动服务"
+               />
+           <CheckBox 
+               android:id="@+id/check_other_peizhi12"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="蓝牙车载电话"
+               />
+           </LinearLayout>
+          
+            
+           
+           <LinearLayout 
+               android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+               >
+           <CheckBox 
+               android:id="@+id/check_other_peizhi13"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="车载电视"
+               />
+           <CheckBox 
+               android:id="@+id/check_other_peizhi14"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="遮阳帘"
+               />
+           <CheckBox 
+               android:id="@+id/check_other_peizhi15"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="感应雨刷"
+               />
+           <CheckBox 
+               android:id="@+id/check_other_peizhi16"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="自动泊车"
+               />
+           </LinearLayout>
+           
+           <LinearLayout 
+               android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+               >
+           <CheckBox 
+               android:id="@+id/check_other_peizhi17"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="并线辅助"
+               />
+           <CheckBox 
+               android:id="@+id/check_other_peizhi18"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="发动机启停技术"
+               />
+           <CheckBox 
+               android:id="@+id/check_other_peizhi19"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="车道偏离预警系统"
+               />
+           <CheckBox 
+               android:id="@+id/check_other_peizhi20"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="主动刹车"
+               />
+           </LinearLayout>
+           
+           <LinearLayout 
+               android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+               >
+           <CheckBox 
+               android:id="@+id/check_other_peizhi21"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="主动巡航"
+               />
+           <CheckBox 
+               android:id="@+id/check_other_peizhi22"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="全景摄像头"
+               />
+           <CheckBox 
+               android:id="@+id/check_other_peizhi23"
+               android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"    
+             android:text="夜视系统"
+               />
+           </LinearLayout>
+            
+            </LinearLayout>
+            </LinearLayout>
+	    	
+	    	<!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />
+	    	
+	    	
+	    	
+	    	
+	    	<LinearLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+                >            
+            
+        	<TextView
+        	    android:layout_marginTop="10dip"
+        	    android:layout_width="140dip"
+    			android:layout_height="wrap_content"
+    			android:text="18.改装配置"
+    			android:gravity="right"
+    			android:textSize="18dip"
+        	    />
+        	
+        	<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textSize="18dip"
+    			android:textColor="@color/red"    			
+    			android:layout_marginRight="5dip"
+        	    />
+	    	<EditText 
+	    	    android:id="@+id/edt_xuanzhuang_peizhi"
+	    	    android:layout_width="fill_parent"
+	    	    android:layout_marginRight="5dip"
+    			android:layout_height="wrap_content"
+	    	    android:lines="5"
+	    	    android:maxLines="5"
+	    	    android:gravity="top"
+	    	    />
+	    	
+	    	</LinearLayout>
+	    	
+	    	
+	    	<!-- 分割线 -->
+	    	<TextView         
+	        style="@style/splite_line"
+	        />
+	    	
+	    	
+	    	
+	    	
+	    	 <!-- 底部按钮 -->
+
+    <include layout="@layout/common_bottom"/>	 
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	    </LinearLayout>	  
+	    	    
+	    	    
+	    	
+	    	
+	    	
+        </LinearLayout>
+        
+        
+            </ScrollView>
+      
+     
+
+    
+   
+    
+    
+    
+</LinearLayout>

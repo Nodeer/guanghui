@@ -1,0 +1,1409 @@
+<!-- 手续登记的布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="#000000"    
+    android:focusable="true"  
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    >
+    
+     <!-- 系统标题 -->
+
+     <include layout="@layout/layout_title" />
+    
+     <!-- 分页 -->
+
+    <include layout="@layout/layout_common_tab_title"/>
+      <!-- 二级标题 -->
+
+     <include layout="@layout/title_renwu" />
+    
+    <!-- 分割线 -->
+   <!--  <TextView         
+        android:layout_marginLeft="5dip"
+    android:layout_marginRight="5dip"
+        style="@style/splite_line"
+        />  -->
+        
+    
+    
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+        >
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"    
+    android:background="@drawable/bg"
+    android:focusable="true"  
+    android:focusableInTouchMode="true"
+    android:layout_marginLeft="5dip"
+    android:layout_marginRight="5dip"
+    android:orientation="vertical"
+    >
+    
+        <RelativeLayout
+        		android:layout_marginLeft="8dip"
+        		android:layout_marginRight="8dip"
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                android:layout_marginBottom="5dip"
+                android:background="@drawable/common_titlebar"
+                >
+<ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/line"
+                            android:src="@drawable/title_bar_jiantou" />
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                    
+                    android:layout_centerVertical="true"
+                    android:text="手续登记"
+                    android:textColor="#000000"
+                     android:layout_marginLeft="15dp"
+                    android:textSize="16sp" />
+                
+                
+                <Button
+                android:id="@+id/car_shouxu_dengji_btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/btn_taskinfo_back" />
+                
+            </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+        >
+        <!-- 拍照布局 -->
+        <LinearLayout 
+        android:layout_marginLeft="10dip"
+        android:layout_width="360dip"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:gravity="center_horizontal"
+        >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/shouxu_dengji_camera_title"
+            android:textSize="22dip"
+            android:background="@drawable/common_titlebar"
+            />
+        
+        <ImageView
+            android:id="@+id/shouxu_dengji_paizhao_image"
+            android:layout_width="fill_parent"
+            android:layout_height="260dip"
+            android:background="#7B7B7B" />
+        
+        <!-- 拍照  和 重拍的按钮 -->
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="50dip"
+    	android:gravity="center_vertical|center_horizontal"
+    	android:background="@drawable/common_titlebar"
+    	android:layout_marginBottom="2dip"
+        >
+        <Button             
+            android:id="@+id/shouxu_dengji1_btn_paizhao"
+            android:background="@drawable/btn_camera"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+            />      
+            
+        
+        <Button           
+            android:layout_marginLeft="20dip"  
+            android:id="@+id/shouxu_dengji1_btn_shibie"
+            android:background="@drawable/commit_style"
+            android:layout_width="wrap_content"
+    		android:layout_height="38dip"
+    		android:text="图片解析"
+    		android:textColor="@color/white"
+            />
+        
+        </LinearLayout>
+        </LinearLayout>
+        
+        <!-- 竖着的分割线 -->
+        <TextView 
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/k3_repeat"
+        android:layout_width="1dip"
+        android:layout_height="fill_parent"
+        />   
+        
+        <!-- 右边部分 -->
+        
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:orientation="vertical"
+    	android:layout_marginRight="10dip"
+        >
+        <!-- 车牌号码 -->
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+        >
+        
+            <TextView 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textColor="@color/red"
+    			android:textSize="20dip"
+        	    />
+        	<TextView 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/shouxu_dengji_txt1"
+    			android:textSize="20dip"
+        	    />
+
+            <EditText
+                android:id="@+id/sx_edit_car_number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapCharacters"
+                android:singleLine="true" />
+
+        </LinearLayout>
+        <!-- 分割线 -->
+    	<TextView 
+        style="@style/splite_line"
+        />  
+        <!-- 车牌归属地 -->
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+        >
+            <TextView 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textColor="@color/red"
+    			android:textSize="20dip"
+        	    />
+        	<TextView 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/shouxu_dengji_txt2"
+    			android:textSize="20dip"
+        	    />
+
+            <EditText
+                android:id="@+id/sx_edit_car_guishudi"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+            
+            <Button
+                android:id="@+id/shouxu_dengji_btn_getguishudi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/btn_refresh" />
+            
+            <Button
+                android:id="@+id/shouxu_dengji_btn_wukexuanxiang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/btn_wuke_xx" />
+            
+        </LinearLayout>
+        <!-- 分割线 -->
+    	<TextView 
+        style="@style/splite_line"
+        />  
+        
+    	<!-- 车牌识别代号 -->
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+        >
+            <TextView 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textColor="@color/red"
+    			android:textSize="20dip"
+        	    />
+        	<TextView 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/shouxu_dengji_txt3"
+    			android:textSize="20dip"
+        	    />
+
+            <EditText
+                android:id="@+id/sx_edit_car_shibie_numer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="17"
+                android:digits="abcdefghjklmnprstuvwxyzABCDEFGHJKLMNPRSTUVWXYZ0123456789"
+                android:singleLine="true" />
+
+        </LinearLayout>
+        <!-- 分割线 -->
+    	<TextView 
+        style="@style/splite_line"
+        />
+    	
+    	<!-- 使用性质 -->
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+        >
+            <TextView 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textColor="@color/red"
+    			android:textSize="20dip"
+        	    />
+        	<TextView 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/shouxu_dengji_txt4"
+    			android:textSize="20dip"
+        	    />
+        	
+        	
+        	 <Spinner
+               android:id="@+id/sx_xingzhi_spineer"
+               style="@style/spinner_style"
+               android:layout_width="200dip"
+               android:layout_height="40dip"
+               android:layout_gravity="center_vertical"
+               android:gravity="center" >
+
+            </Spinner>
+        	
+
+  <!--    <RadioGroup 
+            android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/sx_xingzhi_radion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="非营运" />
+	
+              <RadioButton
+                  android:id="@+id/sx_xingzhi_radion2"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="营转非" />
+	  
+               <RadioButton
+                   android:id="@+id/sx_xingzhi_radion3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="营运" />
+                
+            </RadioGroup>
+           
+         -->       
+         
+        </LinearLayout>
+        <!-- 分割线 -->
+    	<TextView 
+        style="@style/splite_line"
+        />
+    	
+    	<!-- 车辆类型 -->
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+        >
+        <TextView 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textColor="@color/red"
+    			android:textSize="20dip"
+        	    />
+        	<TextView 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/shouxu_dengji_txt5"
+    			android:textSize="20dip"
+        	    />
+
+                      
+            <RadioGroup 
+            android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:orientation="horizontal"
+            >
+
+           
+              <RadioButton
+                  android:id="@+id/sx_edit_car_type1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:checked="true"
+                  android:text="小型车" />
+	  
+               <RadioButton
+                   android:id="@+id/sx_edit_car_type2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="大型车" />
+                
+            </RadioGroup>
+           
+            
+            
+        </LinearLayout>
+        <!-- 分割线 -->
+    	<TextView 
+        style="@style/splite_line"
+        />
+    	
+    	<!-- 品牌型号 -->
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+        >
+            <TextView 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textColor="@color/red"
+    			android:textSize="20dip"
+        	    />
+        	<TextView 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/shouxu_dengji_txt6"
+    			android:textSize="20dip"
+        	    />
+
+            <EditText
+                android:id="@+id/sx_edit_car_pinpai_xinghao"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"                
+                android:singleLine="true" />
+			<!-- android:digits="abcdefghjklmnopqrstuvwxyzABCDEFGHJKLMNOPQRSTUVWXYZ0123456789" -->
+        </LinearLayout>
+        <!-- 分割线 -->
+    	<TextView 
+        style="@style/splite_line"
+        />
+    	
+    	<!-- 发动机号码 -->
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+        >
+            <TextView 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textColor="@color/red"
+    			android:textSize="20dip"
+        	    />
+        	<TextView 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/shouxu_dengji_txt7"
+    			android:textSize="20dip"
+        	    />
+
+            <EditText
+                android:id="@+id/sx_edit_car_fadongji_number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+
+        </LinearLayout>
+        
+        </LinearLayout>
+       
+    </LinearLayout>
+    
+    <!-- 分割线 -->
+    	<TextView 
+        style="@style/splite_line"
+        />    
+    
+    <!-- 出厂日期 -->
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:layout_marginLeft="10dip"
+    	android:layout_marginRight="10dip"
+        >
+        <TextView 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textColor="@color/red"
+    			android:textSize="20dip"
+        	    />
+        	<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/shouxu_dengji_txt8"
+    			android:textSize="20dip"
+        	    />
+
+            <EditText
+                android:id="@+id/sx_edit_car_chuchang_date"
+                android:layout_width="300dip"
+                android:layout_height="wrap_content"
+                android:singleLine="true" 
+                android:focusable="false"
+                android:inputType="none" />
+
+        </LinearLayout>
+    
+        <!-- 分割线 -->
+    	<TextView         
+        style="@style/splite_line"
+        />   
+        
+    	<!-- 首次注册登记日期 -->
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:layout_marginLeft="10dip"
+    	android:layout_marginRight="10dip"
+        >
+            <TextView 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textColor="@color/red"
+    			android:textSize="20dip"
+        	    />
+        	<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/shouxu_dengji_txt9"
+    			android:textSize="20dip"
+        	    />
+
+            <EditText
+                android:id="@+id/sx_edit_car_zhuce_date"
+                android:layout_width="300dip"
+                android:layout_height="wrap_content"
+                android:singleLine="true" 
+                android:focusable="false"
+                android:inputType="none" />
+
+        </LinearLayout>
+        
+        <!-- 分割线 -->
+    	<TextView 
+        style="@style/splite_line"
+        />   
+        
+    	<!-- 强制报废年限 -->
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:layout_marginLeft="10dip"
+    	android:layout_marginRight="10dip"
+        >
+            <TextView 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textColor="@color/red"
+    			android:textSize="20dip"
+        	    />
+        	<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/shouxu_dengji_txt10"
+    			android:textSize="20dip"
+        	    />
+
+            <EditText
+                android:id="@+id/sx_edit_car_baofei_date"
+                android:layout_width="300dip"
+                android:layout_height="wrap_content"
+                android:singleLine="true" 
+                android:focusable="false"
+                android:enabled="false"
+                android:inputType="none" />
+            
+            <Button 
+                android:id="@+id/sx_btn_qiangzhibaofei"
+                android:background="@drawable/btn_refresh"
+                android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_marginLeft="10dip"
+                />
+        </LinearLayout>
+        
+        <!-- 分割线 -->
+    	<TextView 
+        style="@style/splite_line"
+        />   
+        
+    	<!-- 所有人 -->
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:layout_marginLeft="10dip"
+    	android:layout_marginRight="10dip"
+        >
+            <TextView 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textColor="@color/red"
+    			android:textSize="20dip"
+        	    />
+        	<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/shouxu_dengji_txt11"
+    			android:textSize="20dip"
+        	    />
+        	
+        	<RadioGroup 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:orientation="horizontal"
+        	    >
+
+        	    <RadioButton
+        	        android:id="@+id/sx_suoyouren_radion1"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:checked="true"
+        	        android:text="私人" />
+
+        	    <RadioButton
+        	        android:id="@+id/sx_suoyouren_radion2"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:text="公司-非租赁或汽车服务公司" />
+
+        	    <RadioButton
+        	        android:id="@+id/sx_suoyouren_radion3"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:text="公司-租赁或汽车服务公司" />
+        	    
+        	</RadioGroup>
+        </LinearLayout>
+        
+        <!-- 分割线 -->
+    	<TextView 
+        style="@style/splite_line"
+        />   
+    	
+    	<!-- 排放标准 -->
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:layout_marginLeft="10dip"
+    	android:layout_marginRight="10dip"
+        >
+        	<TextView 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textColor="@color/red"
+    			android:textSize="20dip"
+        	    />
+        	<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/shouxu_dengji_txt12"
+    			android:textSize="20dip"
+        	    />
+        	
+        	
+        	
+        	<RadioGroup 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:orientation="horizontal"
+        	    >
+
+        	    <RadioButton
+        	        android:id="@+id/sx_paifang_radion1"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:checked="true"
+        	        android:text="国一" />
+
+        	    <RadioButton
+        	        android:id="@+id/sx_paifang_radion2"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:text="国二" />
+
+        	    <RadioButton
+        	        android:id="@+id/sx_paifang_radion3"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:text="国三" />
+
+        	    <RadioButton
+        	        android:id="@+id/sx_paifang_radion4"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:text="国四" />
+
+        	    <RadioButton
+        	        android:id="@+id/sx_paifang_radion5"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:text="国五" />
+
+        	</RadioGroup>
+        	
+        	
+        	
+        	<Button 
+        	    android:id="@+id/sx_paifang_button_huoqu"
+        	    android:layout_marginLeft="30dip"
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:background="@drawable/btn_lianwang_huoqu"
+        	    />   	
+        	
+        	
+        </LinearLayout>
+        
+        <!-- 分割线 -->
+    	<TextView 
+        style="@style/splite_line"
+        />   
+        
+    	<!-- 办证状态 -->
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:layout_marginLeft="10dip"
+    	android:layout_marginRight="3dip"
+        >
+        	<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/shouxu_dengji_txt13"
+    			android:textSize="20dip"
+        	    />
+        	<RadioGroup 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:orientation="horizontal"
+        	    >
+
+        	    <RadioButton
+        	        android:id="@+id/sx_banzheng_radion1"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:text="可过户转籍" />
+
+        	    <RadioButton
+        	        android:id="@+id/sx_banzheng_radion2"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:text="只能过户" />
+
+        	    <RadioButton
+        	        android:id="@+id/sx_banzheng_radion3"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:text="过户转籍有次数限制" />
+
+        	    <RadioButton
+        	        android:id="@+id/sx_banzheng_radion4"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:text="不能过户转籍" />
+        	</RadioGroup>      
+        	
+        	<Button        	   
+        	        android:id="@+id/buqueding13"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:textColor="#666666"
+        	        android:background="@drawable/buqueding"
+        	        android:text="不确定" />  	
+        	        
+        </LinearLayout>
+        
+        <!-- 分割线 -->
+    	<TextView 
+        style="@style/splite_line"
+        />   
+    	
+    	<!-- 变更记录 -->
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:layout_marginLeft="10dip"
+    	android:layout_marginRight="10dip"
+        >
+        	<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/shouxu_dengji_txt14"
+    			android:textSize="20dip"
+        	    />
+        	<RadioGroup 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:orientation="horizontal"
+        	    >
+
+        	    <RadioButton
+        	        android:id="@+id/sx_biangeng_radion1"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:text="无" />
+
+        	    <RadioButton
+        	        android:id="@+id/sx_biangeng_radion2"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginLeft="50dip"
+        	        android:text="有" />
+
+        	</RadioGroup>
+        		
+        	
+        	<Button
+        	    android:layout_marginLeft="50dip"
+        	        android:id="@+id/buqueding14"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:textColor="#666666"
+        	        android:background="@drawable/buqueding"
+        	        android:text="不确定" />  	
+        	        
+        </LinearLayout>
+        
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:layout_marginRight="10dip"
+    	android:layout_marginLeft="100dip"
+        >
+        
+            <TextView                 
+                android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+                android:text="过户"
+                android:textSize="20dip"
+                />
+
+			<EditText
+			    android:id="@+id/sx_biangeng_cishu"
+			    android:layout_width="100dip"
+			    android:layout_height="wrap_content"
+			    android:inputType="number"
+			    android:maxLength="3" />
+            
+            <TextView 
+                android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+                android:text="次"
+                android:textSize="20dip"
+                />
+            
+            
+        	    <CheckBox
+        	        android:id="@+id/sx_biangeng_checkbox1"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginLeft="50dip"
+        	        android:text="颜色变更" />
+
+        	    <CheckBox
+        	        android:id="@+id/sx_biangeng_checkbox2"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginLeft="30dip"
+        	        android:text="发动机变更" />
+
+        	    <CheckBox
+        	        android:id="@+id/sx_biangeng_checkbox3"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginLeft="30dip"
+        	        android:text="车架变更" />
+        	
+        </LinearLayout>
+        
+        <!-- 分割线 -->
+    	<TextView 
+        style="@style/splite_line"
+        />   
+        
+    	
+    	<!-- 购置税 -->
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:layout_marginLeft="10dip"
+    	android:layout_marginRight="10dip"
+        >
+        	<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/shouxu_dengji_txt15"
+    			android:textSize="20dip"
+        	    />
+        	<RadioGroup 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:orientation="horizontal"
+        	    >
+
+        	    <RadioButton
+        	        android:id="@+id/sx_gouzhi_radion1"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:text="完税" />
+
+        	    <RadioButton
+        	        android:id="@+id/sx_gouzhi_radion2"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginLeft="50dip"
+        	        android:text="免税-未满10年" />
+				<RadioButton
+        	        android:id="@+id/sx_gouzhi_radion3"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginLeft="50dip"
+        	        android:text="免税-已满10年" />
+        	</RadioGroup>
+        	
+        	
+        	
+        	<Button
+        	    android:layout_marginLeft="20dip"
+        	        android:id="@+id/buqueding15"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:textColor="#666666"
+        	        android:background="@drawable/buqueding"
+        	        android:text="不确定" />  	
+        	        
+        </LinearLayout>
+        
+        <!-- 分割线 -->
+    	<TextView 
+        style="@style/splite_line"
+        />   
+        
+    	
+    	<!-- 交强险有效期 -->
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:layout_marginLeft="10dip"
+    	android:layout_marginRight="10dip"
+        >
+        	<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/shouxu_dengji_txt16"
+    			android:textSize="20dip"
+        	    />
+
+            <EditText
+                android:id="@+id/sx_edit_jiaoqiangxian_date"
+                android:layout_width="300dip"
+                android:layout_height="wrap_content"
+                android:singleLine="true" 
+                android:focusable="false"
+                android:inputType="none"/>
+            
+            <Button
+        	    android:layout_marginLeft="20dip"
+        	        android:id="@+id/buqueding16"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:textColor="#666666"
+        	        android:background="@drawable/buqueding"
+        	        android:text="不确定" />  	
+
+        </LinearLayout>
+        <!-- 分割线 -->
+    	<TextView 
+        style="@style/splite_line"
+        />  
+        <!-- 年检有效期 -->
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:layout_marginLeft="10dip"
+    	android:layout_marginRight="10dip"
+        >
+        	<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/shouxu_dengji_txt17"
+    			android:textSize="20dip"
+        	    />
+
+            <EditText
+                android:id="@+id/sx_edit_nianjian_date"
+                android:layout_width="300dip"
+                android:layout_height="wrap_content"
+                android:singleLine="true" 
+                android:focusable="false"
+                android:inputType="none"/>
+            
+            <Button
+        	    android:layout_marginLeft="20dip"
+        	        android:id="@+id/buqueding17"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:textColor="#666666"
+        	        android:background="@drawable/buqueding"
+        	        android:text="不确定" />  	
+
+        </LinearLayout>
+        <!-- 分割线 -->
+    	<TextView 
+        style="@style/splite_line"
+        />  
+        <!-- 通行费有效期 -->
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:layout_marginLeft="10dip"
+    	android:layout_marginRight="10dip"
+        >
+        	<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/shouxu_dengji_txt18"
+    			android:textSize="20dip"
+        	    />
+
+            <EditText
+                android:id="@+id/sx_edit_tongxingfei_date"
+                android:layout_width="300dip"
+                android:layout_height="wrap_content"
+                android:singleLine="true" 
+                android:focusable="false"
+                android:inputType="none"/>
+            
+            <Button
+        	    android:layout_marginLeft="20dip"
+        	        android:id="@+id/buqueding18"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:textColor="#666666"
+        	        android:background="@drawable/buqueding"
+        	        android:text="不确定" />  	
+
+        </LinearLayout>
+        <!-- 分割线 -->
+    	<TextView 
+        style="@style/splite_line"
+        />  
+        <!-- 违章未处理记录 -->
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:layout_marginLeft="10dip"
+    	android:layout_marginRight="10dip"
+        >
+        	<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/shouxu_dengji_txt19"
+    			android:textSize="20dip"
+        	    />
+
+            <EditText
+                android:id="@+id/sx_edit_fen"
+                android:layout_width="110dip"
+                android:layout_height="wrap_content"
+                android:hint="扣"
+                android:text=""
+                android:inputType="number"
+                android:singleLine="true" />
+
+            <TextView 
+                android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:textSize="20dip"
+                android:text="分"/>
+
+            <EditText
+                android:id="@+id/sx_edit_yuan"
+                android:layout_width="110dip"
+                android:layout_height="wrap_content"
+                android:hint="罚"
+                android:text=""
+                android:inputType="number"
+                android:singleLine="true" />
+
+            <TextView 
+                android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:textSize="20dip"
+                android:text="元"/>
+            
+            
+            <Button
+        	    android:layout_marginLeft="20dip"
+        	        android:id="@+id/buqueding19"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:textColor="#666666"
+        	        android:background="@drawable/buqueding"
+        	        android:text="不确定" />  	
+        	        
+            
+            
+            <EditText 
+        	    android:layout_marginLeft="55dip"
+                android:layout_width="90dip"
+    			android:layout_height="wrap_content"
+    			android:singleLine="true"
+    			android:hint="验证码"
+    			android:visibility="gone"
+                />
+        	
+        	<ImageView        
+        	    android:background="@drawable/misc"
+        	    android:layout_width="80dip"
+    			android:layout_height="40dip"
+    			android:visibility="gone"
+        	    />
+        	
+        	<Button 
+        	    android:layout_marginLeft="10dip"
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:background="@drawable/btn_lianwang_huoqu"
+    			android:visibility="gone"
+        	    />     	
+        </LinearLayout>
+        <!-- 分割线 -->
+    	<TextView 
+        style="@style/splite_line"
+        />  
+        
+    	<!-- 牌照额度-->
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:layout_marginLeft="10dip"
+    	android:layout_marginRight="10dip"
+        >
+        	<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/shouxu_dengji_txt20"
+    			android:textSize="20dip"
+        	    />
+        	<RadioGroup 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:orientation="horizontal"
+        	    >
+
+        	    <RadioButton
+        	        android:id="@+id/sx_paizhao_edu_radion1"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:text="含额度出售" />
+
+        	    <RadioButton
+        	        android:id="@+id/sx_paizhao_edu_radion2"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginLeft="50dip"
+        	        android:text="不含额度出售" />
+
+        	</RadioGroup>
+        	
+        	
+        	<Button
+        	    android:layout_marginLeft="20dip"
+        	        android:id="@+id/buqueding20"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:textColor="#666666"
+        	        android:background="@drawable/buqueding"
+        	        android:text="不确定" />  	
+        	        
+        </LinearLayout>
+    	<!-- 分割线 -->
+    	<TextView 
+        style="@style/splite_line"
+        />  
+        
+    	<!-- 原厂钥匙-->
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:layout_marginLeft="10dip"
+    	android:layout_marginRight="10dip"
+        >
+        	 <TextView 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textColor="@color/red"
+    			android:textSize="20dip"
+        	    />
+        	<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/shouxu_dengji_txt21"
+    			android:textSize="20dip"
+        	    />
+        	<RadioGroup 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:orientation="horizontal"
+        	    >
+        	    <RadioButton 
+        	        android:id="@+id/sx_yaoshi_radion1"
+        	        android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:text="有："
+    				android:checked="true"
+        	        />
+        	    
+        	    <EditText         	          	       
+        	        android:id="@+id/sx_yaoshi_ba" 
+        	        android:layout_width="100dip"
+    				android:layout_height="wrap_content"
+        	        android:inputType="number"
+        	        android:maxLength="2"
+        	        android:text="2"
+        	        />
+        	    <TextView       
+        	        android:text="把"
+        	        android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:textSize="20dip"
+        	        />        	    
+        	    <RadioButton 
+        	        android:id="@+id/sx_yaoshi_radion2"
+        	        android:layout_marginLeft="50dip"
+        	        android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:text="无"
+        	        />
+        	</RadioGroup>
+        	
+        </LinearLayout>
+    	<!-- 分割线 -->
+    	<TextView 
+        style="@style/splite_line"
+        />  
+        <!-- 随车工具 -->
+    	<LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:layout_marginLeft="10dip"
+    	android:layout_marginRight="10dip"
+        >
+        	 <TextView 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textColor="@color/red"
+    			android:textSize="20dip"
+        	    />
+        	<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/shouxu_dengji_txt22"
+    			android:textSize="20dip"
+        	    />
+        	<RadioGroup 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:orientation="horizontal"
+        	    >
+        	    <RadioButton 
+        	        android:id="@+id/sx_gongju_radion1"
+        	        android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:text="有"
+    				android:checked="true"
+        	        /> 	    
+        	    <RadioButton 
+        	        android:id="@+id/sx_gongju_radion2"
+        	        android:layout_marginLeft="50dip"
+        	        android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:text="缺："
+        	        />
+        	    <EditText
+        	        android:id="@+id/sx_gongju_lost"
+                android:layout_width="350dip"
+    			android:layout_height="wrap_content"
+    			android:singleLine="true"
+                ></EditText>
+        	</RadioGroup>
+        	
+        </LinearLayout>
+        
+    	<!-- 分割线 -->
+    	<TextView 
+        style="@style/splite_line"
+        /> 
+        
+    	<!-- 车辆使用说明书-->
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:layout_marginLeft="10dip"
+    	android:layout_marginRight="10dip"
+        >
+        	 <TextView 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textColor="@color/red"
+    			android:textSize="20dip"
+        	    />
+        	<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/shouxu_dengji_txt23"
+    			android:textSize="20dip"
+        	    />
+        	<RadioGroup 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:orientation="horizontal"
+        	    >
+        	    <RadioButton 
+        	        android:id="@+id/sx_shoumingshu_radion1"
+        	        android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:text="有"
+    				android:checked="true"
+        	        />
+        	    <RadioButton 
+        	        android:id="@+id/sx_shoumingshu_radion2"
+        	        android:layout_marginLeft="50dip"
+        	        android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:text="无"
+        	        />
+        	</RadioGroup>
+        	
+        </LinearLayout>
+    	<!-- 分割线 -->
+    	<TextView 
+        style="@style/splite_line"
+        />  
+        
+    	
+    	<!-- 车辆保养手册-->
+        <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:layout_marginLeft="10dip"
+    	android:layout_marginRight="10dip"
+        >
+        	 <TextView 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="*"
+    			android:textColor="@color/red"
+    			android:textSize="20dip"
+        	    />
+        	<TextView
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/shouxu_dengji_txt24"
+    			android:textSize="20dip"
+        	    />
+        	<RadioGroup 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:orientation="horizontal"
+        	    >
+        	    <RadioButton 
+        	        android:id="@+id/sx_baoyang_radion1"
+        	        android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:text="有"
+    				android:checked="true"
+        	        />
+        	    <RadioButton 
+        	        android:id="@+id/sx_baoyang_radion2"
+        	        android:layout_marginLeft="50dip"
+        	        android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:text="无"
+        	        />
+        	</RadioGroup>
+        	
+        </LinearLayout>
+        
+        
+       <!-- 底部按钮 -->
+
+    <include layout="@layout/common_bottom"/>
+     
+     
+    	</LinearLayout>
+    	</ScrollView>
+    
+    
+    
+</LinearLayout>

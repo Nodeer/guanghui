@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.guanghui.car"
+    android:versionCode="1"
+    android:versionName="1.23" > 
+    
+   <!-- android:versionName="1.23" > -->
+	
+
+
+
+
+    <!-- 程序权限 -->
+
+    <!-- 上网权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 系统相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 访问网络状态权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 操作SD卡权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	
+	
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    
+	<uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+    
+    
+    <uses-feature android:name="android.permission.INSTALL_PACKAGES" />
+    
+    
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <application
+        android:name="com.guanghui.car.application.MyApplication"
+        android:allowBackup="true"
+        android:screenOrientation="portrait"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.guanghui.car.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.guanghui.car.Tab1Activity">
+        </activity>
+        <activity
+            android:name="com.guanghui.car.BuildTaskActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity android:name="com.guanghui.car.TaskInfoActivity">
+        </activity>
+        <activity android:name="com.guanghui.car.CheckActivity">
+        </activity>
+        <activity android:name="com.guanghui.car.ShouXuDengJiAcitivity">
+        </activity>
+        <activity android:name="com.guanghui.car.CarDengji">
+        </activity>        
+        <activity android:name="com.guanghui.car.CarCheckActivity">
+        </activity>
+        <activity android:name="com.guanghui.car.CarReplyActivity">
+        </activity>
+        <activity android:name="com.guanghui.car.CheckTaskPreviewActivity">
+        </activity>
+        <activity android:name="com.guanghui.car.CarConfigurationActivity">
+        </activity>
+        <activity android:name="com.guanghui.car.CarConfigurationDetailActivity">
+        </activity>
+        <activity android:name="com.guanghui.car.CarDengji1">
+        </activity>
+        <activity android:name="com.guanghui.car.CarDengji2">
+        </activity>
+        <activity android:name="com.guanghui.car.CarDengji3">
+        </activity>
+         <activity android:name="com.guanghui.car.CarDengji4">
+        </activity>
+        <activity android:name="com.guanghui.car.ExitAcitivity">
+        </activity>
+        <activity android:name="com.guanghui.car.TakePhotoActivity">
+        </activity>
+        <activity android:name="com.guanghui.car.Tab3Activity">
+        </activity>
+        <activity android:name="com.guanghui.car.Tab2Activity">
+        </activity>
+        <activity android:name="com.guanghui.car.ActivityMain">
+        </activity>
+        <activity android:name="com.guanghui.car.TongZhiInfoActivity">
+        </activity>
+        <activity android:name="com.guanghui.car.CheckTaskPreviewActivity2">
+        </activity>        
+        <activity android:name="com.guanghui.car.CheckActivity2">
+        </activity>
+        <activity android:name="com.guanghui.car.CheckTaskPreviewActivity3">
+        </activity>        
+        <service  android:name="com.guanghui.car.service.HeartbeatService"></service>
+        <receiver  
+            android:name="com.guanghui.car.broadCast.HearbeatBroadCast">
+        </receiver> 
+        <!-- 精密检测 -->
+         <activity android:name="com.guanghui.car.jingmicheck.JingMiCarCheckActivity" >          
+        </activity>
+        <activity android:name="com.guanghui.car.jingmicheck.CameraActivity" >
+        </activity>
+        <activity android:name="com.guanghui.car.jingmicheck.AllDefectShowActivity"            
+             android:theme="@style/zydialog"
+             />            
+           
+        
+        <activity android:name="com.guanghui.car.CarPriceListActivity" >
+        </activity>
+        <activity android:name="com.guanghui.car.BaoJiaListActivity" >
+        </activity>
+        
+        
+         <activity android:name="com.guanghui.car.ShouXuDengJiActivity2" >
+        </activity>
+        
+         
+         <activity android:name="com.guanghui.car.EditTaskListActivity" >
+        </activity>
+        
+         
+         
+         
+    </application>
+
+</manifest>
